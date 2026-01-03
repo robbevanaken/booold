@@ -1,4 +1,4 @@
-@import "./vendor" layer(base);
+/* @import "./vendor" layer(base); */
 @import "./base" layer(base);
 @import "./objects" layer(objects);
 @import "./components" layer(components);

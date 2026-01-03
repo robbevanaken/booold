@@ -15,7 +15,10 @@ module.exports = {
         orange: '#FF4D00',
         green: '#CCFF33',
       },
-      fontFamily: {},
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+        'dark-paradise': ['Dark Paradise', 'serif'],
+      },
       fontSize: {
         "xs": ["clamp(10px, 1vw, 12px)", 1],
         "base": ["clamp(14px, 1.5vw, 20px)", 1.5],
