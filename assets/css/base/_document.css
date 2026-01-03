@@ -1,14 +1,15 @@
 @font-face {
     font-family: 'Inter';
-    src: url('/assets/fonts/Inter-VariableFont.woff2') format('woff2');
+    src: url('/fonts/Inter-VariableFont.woff2') format('woff2'),
+         url('/fonts/Inter-VariableFont.woff') format('woff');
     font-weight: 100 900;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Dark Paradise';
-    src: url('/assets/fonts/DarkParadise-Italic.woff2') format('woff2'),
-         url('/assets/fonts/DarkParadise-Italic.woff') format('woff');
+    src: url('/fonts/DarkParadise-Italic.woff2') format('woff2'),
+         url('/fonts/DarkParadise-Italic.woff') format('woff');
     font-style: italic;
     font-weight: 400;
     font-display: swap;
