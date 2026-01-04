@@ -1,1 +1,3 @@
-.c-site-header {}
+.c-site-header {
+    @apply md:py-10
+}

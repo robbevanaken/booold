@@ -1,0 +1,15 @@
+.c-logo {
+  @apply w-[6.25rem] h-auto;
+}
+
+.c-logo svg {
+    @apply w-full h-auto;
+}
+
+.c-logo:not(.c-logo--inverse) path {
+    @apply fill-black;
+}
+
+.c-logo--inverse path {
+    @apply fill-white;
+}

@@ -32,6 +32,6 @@ html {
 body {
     @apply bg-white;
     @apply overflow-x-hidden;
-    @apply text-sans;
+    @apply text-sans text-black;
     overflow: hidden;
 }

@@ -1,0 +1,7 @@
+.c-navigation-primary--inverse {
+    @apply text-white;
+}
+
+.c-navigation-primary__list {
+    @apply flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0;
+}
