@@ -1,5 +1,5 @@
 <template>
-    <SiteHeader />
+    <SiteHeader :inverse="true" />
     <main>
         <HomeHero />
     </main>

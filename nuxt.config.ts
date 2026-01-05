@@ -12,4 +12,10 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss'
   ],
+
+  vite: {
+    optimizeDeps: {
+      include: ['gsap', 'gsap/ScrambleTextPlugin', 'gsap/SplitText']
+    }
+  }
 })

@@ -1,0 +1,11 @@
+.c-hero-home {
+    @apply relative h-screen;
+}
+
+.c-hero-home__canvas {
+    @apply absolute top-0 left-0 right-0 -bottom-40;
+}
+
+.c-hero-home__canvas a {
+    @apply !hidden;
+}
