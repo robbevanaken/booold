@@ -7,5 +7,5 @@
 }
 
 .c-hero-home__canvas a {
-    /* @apply !hidden; */
+    @apply !hidden;
 }
