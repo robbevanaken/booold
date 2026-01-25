@@ -34,51 +34,32 @@
   </div>
 </template>
 
-<script>
-import IconGlobe from '~/components/IconGlobe.vue';
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import IconGlobe from '~/components/IconGlobe.vue'
+import { useUnicornStudio } from '~/composables/useUnicornStudio'
 
-export default {
-  name: 'HomeHero',
-  data() {
-    return {
-      currentTime: '',
-      timeInterval: null
-    }
-  },
-  mounted() {
-    this.loadUnicordStudio()
-    this.updateTime()
-    this.timeInterval = setInterval(this.updateTime, 1000)
-  },
-  beforeUnmount() {
-    if (this.timeInterval) {
-      clearInterval(this.timeInterval)
-    }
-  },
-  methods: {
-    updateTime() {
-      this.currentTime = new Date().toLocaleTimeString('en-GB', {
-        timeZone: 'Europe/Brussels',
-        hour: '2-digit',
-        minute: '2-digit'
-      })
-    },
-    loadUnicordStudio() {
-      if (!window.UnicornStudio) {
-        window.UnicornStudio = { isInitialized: false }
-        const script = document.createElement('script')
-        script.src = 'https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.0.0/dist/unicornStudio.umd.js'
-        script.onload = () => {
-          if (!window.UnicornStudio.isInitialized) {
-            window.UnicornStudio.init()
-            window.UnicornStudio.isInitialized = true
-          }
-        }
-        document.head.appendChild(script)
-      } else if (window.UnicornStudio.isInitialized) {
-        window.UnicornStudio.init()
-      }
-    }
-  }
+useUnicornStudio()
+
+const currentTime = ref('')
+let timeInterval = null
+
+const updateTime = () => {
+  currentTime.value = new Date().toLocaleTimeString('en-GB', {
+    timeZone: 'Europe/Brussels',
+    hour: '2-digit',
+    minute: '2-digit'
+  })
 }
+
+onMounted(() => {
+  updateTime()
+  timeInterval = setInterval(updateTime, 1000)
+})
+
+onBeforeUnmount(() => {
+  if (timeInterval) {
+    clearInterval(timeInterval)
+  }
+})
 </script>

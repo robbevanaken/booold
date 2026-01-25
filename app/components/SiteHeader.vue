@@ -1,5 +1,5 @@
 <template>
-  <header class="c-site-header">
+  <header class="c-site-header ">
     <div class="o-container">
       <div class="flex items-center justify-between gap-8">
         <CompanyLogo :inverse="inverse" />

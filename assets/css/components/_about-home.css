@@ -1,0 +1,23 @@
+.c-about-home {
+    @apply pt-[6.5rem] md:pt-[11rem] pb-[4.275rem];
+}
+
+.c-about-home__intro {
+    @apply text-black text-lg tracking-tight leading-[120%];
+}
+
+.c-about-home__content {
+    @apply pt-[2.5rem] md:pt-[5.75rem];
+}
+
+.c-about-home__content-canvas-wrapper {
+    @apply relative aspect-[335/388] overflow-hidden;
+}
+
+.c-about-home__content-canvas {
+    @apply absolute top-0 left-0 right-0 -bottom-[6.25rem] -z-10;
+}
+
+.c-about-home__content-text p {
+    @apply text-base text-black tracking-tight;
+}

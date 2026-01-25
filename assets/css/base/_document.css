@@ -33,5 +33,8 @@ body {
     @apply bg-white;
     @apply overflow-x-hidden;
     @apply text-sans text-black;
-    overflow: hidden;
+}
+
+body::selection {
+    @apply text-white bg-orange/75;
 }
