@@ -1,0 +1,31 @@
+.c-site-footer {
+    @apply min-h-screen bg-black;
+    @apply flex flex-col justify-between gap-20;
+    @apply pb-5 pt-10 lg:pt-[6.25rem] overflow-hidden;
+}
+
+.c-site-footer__title {
+    @apply text-white text-xxl font-dark-paradise;
+}
+
+.c-site-footer__subtitle {
+    @apply text-white font-dark-paradise text-lg mb-0 lg:mb-6;
+}
+
+.c-site-footer__doormat-logo {
+    @apply w-full;
+}
+
+.c-site-footer__doormat-logo svg {
+    @apply w-full h-auto;
+}
+
+.c-site-footer__list {
+    @apply flex flex-col gap-2;
+}
+
+.c-site-footer__list a {
+    @apply text-white text-md font-light;
+}
+
+.c-site-footer__doormat-navigation {}
