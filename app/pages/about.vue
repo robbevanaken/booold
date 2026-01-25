@@ -1,7 +1,8 @@
 <template>
+  <div>
     <SiteHeader />
     <main>
-        <HomeHero />
     </main>
     <SiteFooter />
+  </div>
 </template>

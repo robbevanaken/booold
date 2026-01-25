@@ -1,7 +1,9 @@
 <template>
+  <div>
     <SiteHeader :inverse="true" />
     <main>
-        <HomeHero />
+      <HomeHero />
     </main>
     <SiteFooter />
+  </div>
 </template>

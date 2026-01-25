@@ -17,5 +17,9 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: ['gsap', 'gsap/ScrambleTextPlugin', 'gsap/SplitText']
     }
-  }
+  },
+
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
 })
