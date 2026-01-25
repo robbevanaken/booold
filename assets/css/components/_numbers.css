@@ -1,0 +1,20 @@
+.c-numbers {
+    @apply pb-[4.275rem];
+}
+
+.c-numbers__number {
+    @apply flex flex-col items-center justify-center;
+    @apply aspect-square;
+}
+
+.c-numbers__number-digit {
+    @apply font-dark-paradise text-xxxl;
+}
+
+.c-numbers__number-digit span {
+    @apply text-orange
+}
+
+.c-numbers__number-label {
+    @apply text-base text-black;
+}

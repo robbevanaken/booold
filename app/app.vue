@@ -7,12 +7,13 @@
 <script setup>
   import { onMounted } from 'vue'
   import { initLenis } from "../../assets/js/animations/lenis.js";
-  import { initContentRevealScroll, initActiveHeader } from "../../assets/js/animations/contentReveal.js";
+  import { initContentRevealScroll, initActiveHeader, initCountUp } from "../../assets/js/animations/contentReveal.js";
 
   onMounted(() => {
     initLenis();
     initContentRevealScroll();
     initActiveHeader();
+    initCountUp();
   });
 </script>
 

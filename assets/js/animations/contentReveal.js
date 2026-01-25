@@ -104,4 +104,71 @@ function initActiveHeader() {
   return () => ctx.revert()
 }
 
-export { initContentRevealScroll, initActiveHeader }
+function initCountUp() {
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  const elements = document.querySelectorAll('[data-count-up]')
+
+  if (!elements.length) return
+
+  const ctx = gsap.context(() => {
+    elements.forEach(element => {
+      // Find the first text node (the number)
+      let numberNode = null
+      for (const node of element.childNodes) {
+        if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+          numberNode = node
+          break
+        }
+      }
+
+      if (!numberNode) return
+
+      const text = numberNode.textContent.trim()
+
+      // Parse number (e.g., "50", "5k", "100")
+      const match = text.match(/^([\d.]+)(k)?$/)
+      if (!match) return
+
+      const targetNum = parseFloat(match[1])
+      const suffix = match[2] || ''
+
+      // Config from attributes
+      const duration = parseFloat(element.getAttribute('data-duration') || '2')
+      const delay = parseFloat(element.getAttribute('data-delay') || '0') / 1000
+      const start = element.getAttribute('data-start') || 'top 85%'
+
+      // Object to animate
+      const counter = { value: 0 }
+
+      // Reduced motion: show final value immediately
+      if (prefersReduced) return
+
+      // Set initial state
+      numberNode.textContent = '0' + suffix
+
+      // Animate on scroll
+      ScrollTrigger.create({
+        trigger: element,
+        start: start,
+        once: true,
+        onEnter: () => {
+          gsap.to(counter, {
+            value: targetNum,
+            duration: duration,
+            delay: delay,
+            ease: 'power2.out',
+            onUpdate: () => {
+              const current = Math.round(counter.value)
+              numberNode.textContent = current + suffix
+            }
+          })
+        }
+      })
+    })
+  })
+
+  return () => ctx.revert()
+}
+
+export { initContentRevealScroll, initActiveHeader, initCountUp }

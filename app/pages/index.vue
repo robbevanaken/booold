@@ -4,6 +4,7 @@
     <main>
       <HomeHero />
       <HomeAbout />
+      <HomeNumbers />
     </main>
     <SiteFooter />
   </div>

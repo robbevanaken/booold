@@ -26,7 +26,7 @@ module.exports = {
         "lg": ["clamp(24px, 2.5vw, 40px)", 1.7],
         "xl": ["clamp(28px, 3vw, 56px)", 1.25],
         "xxl": ["clamp(40px, 5vw, 64px)", 1.15],
-        "xxxl": ["clamp(40px, 6vw, 94px)", 1.15],
+        "xxxl": ["clamp(64px, 6vw, 94px)", 1.15],
       },
       letterSpacing: {
         "tight": '-0.04em',  // -4%
