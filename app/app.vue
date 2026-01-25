@@ -4,6 +4,18 @@
   </div>
 </template>
 
+<script setup>
+  import { onMounted } from 'vue'
+  import { initLenis } from "../../assets/js/animations/lenis.js";
+  import { initContentRevealScroll, initActiveHeader } from "../../assets/js/animations/contentReveal.js";
+
+  onMounted(() => {
+    initLenis();
+    initContentRevealScroll();
+    initActiveHeader();
+  });
+</script>
+
 <style>
 .page-enter-active,
 .page-leave-active {

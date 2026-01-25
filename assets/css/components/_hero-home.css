@@ -16,7 +16,7 @@
 }
 
 .c-hero-home__logo-text {
-    @apply flex flex-col md:flex-row md:justify-between items-end gap-6;
+    @apply flex flex-col md:flex-row md:justify-between md:items-end gap-6;
 }
 
 .c-hero-home__logo-text h1 {

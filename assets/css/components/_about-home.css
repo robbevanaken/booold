@@ -1,5 +1,6 @@
 .c-about-home {
     @apply pt-[6.5rem] md:pt-[11rem] pb-[4.275rem];
+    @apply overflow-hidden;
 }
 
 .c-about-home__intro {
@@ -11,7 +12,8 @@
 }
 
 .c-about-home__content-canvas-wrapper {
-    @apply relative aspect-[335/388] overflow-hidden;
+    @apply relative aspect-[2/1] md:aspect-[335/388] overflow-hidden;
+    @apply mx-[-1.25rem] md:mx-0;
 }
 
 .c-about-home__content-canvas {
@@ -20,4 +22,8 @@
 
 .c-about-home__content-text p {
     @apply text-base text-black tracking-tight;
+}
+
+.c-about-home__content-text a {
+    @apply mt-8;
 }

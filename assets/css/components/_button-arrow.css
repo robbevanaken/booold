@@ -1,0 +1,34 @@
+.c-btn-arrow {
+    @apply relative;
+    @apply inline-flex items-center gap-1.5;
+    @apply text-base text-black font-semibold;
+    @apply pb-1;
+    @apply transition-colors duration-500 ease-in-out;
+}
+
+.c-btn-arrow::after {
+    content: '';
+    @apply w-0 h-[0.0625rem] bg-black;
+    @apply absolute bottom-0 left-0;
+    @apply transition-all duration-500 ease-in-out;
+}
+
+.c-btn-arrow path,
+.c-btn-arrow path {
+    @apply transition-colors duration-500 ease-in-out;
+}
+
+.c-btn-arrow:hover,
+.c-btn-arrow:focus-visible {
+    @apply text-orange;
+}
+
+.c-btn-arrow:hover:after, 
+.c-btn-arrow:focus-visible:after {
+    @apply w-full bg-orange;
+}
+
+.c-btn-arrow:hover path,
+.c-btn-arrow:focus-visible path {
+    @apply stroke-orange;
+}
