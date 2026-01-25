@@ -5,6 +5,7 @@
       <HomeHero />
       <HomeAbout />
       <HomeNumbers />
+      <HomeReel />
     </main>
     <SiteFooter />
   </div>

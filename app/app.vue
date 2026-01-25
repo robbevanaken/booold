@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-theme-nav="light">
     <NuxtPage />
   </div>
 </template>
@@ -9,6 +9,7 @@
   import { initLenis } from "../../assets/js/animations/lenis.js";
   import { initContentRevealScroll, initActiveHeader, initCountUp } from "../../assets/js/animations/contentReveal.js";
   import { initButtonCharacterStagger } from "../../assets/js/animations/textHover.js";
+  import { initCheckSectionThemeScroll } from "../../assets/js/animations/sectionThemes.js";
 
   onMounted(() => {
     initLenis();
@@ -16,6 +17,7 @@
     initActiveHeader();
     initCountUp();
     initButtonCharacterStagger();
+    initCheckSectionThemeScroll();
   });
 </script>
 

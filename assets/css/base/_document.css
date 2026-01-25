@@ -38,3 +38,11 @@ body {
 body::selection {
     @apply text-white bg-orange/75;
 }
+
+[data-theme-nav] {
+    @apply transition-colors duration-500 ease-in-out;
+}
+
+[data-theme-nav="dark"] {
+    @apply bg-black;
+}
