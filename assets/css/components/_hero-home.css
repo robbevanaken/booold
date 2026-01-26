@@ -24,7 +24,7 @@
 }
 
 .c-hero-home__logo-text p {
-    @apply text-white text-md tracking-tight font-medium hidden md:block;
+    @apply text-white text-md tracking-tight font-medium sr-only md:not-sr-only;
 }
 
 .c-hero-home__canvas a {
