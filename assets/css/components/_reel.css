@@ -1,3 +1,20 @@
 .c-reel {
-    @apply aspect-[1164/661];
+    @apply aspect-[2/1];
+}
+
+.c-reel__swiper {
+    @apply w-full h-full;
+}
+
+.c-reel__swiper .swiper-wrapper {
+    @apply w-full h-full;
+}
+
+.c-reel__swiper .swiper-slide {
+    @apply w-full h-full;
+}
+
+.c-reel__swiper .swiper-slide  img {
+    @apply w-full h-full;
+    @apply object-cover object-center;
 }
