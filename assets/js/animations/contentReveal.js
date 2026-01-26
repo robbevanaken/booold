@@ -132,4 +132,29 @@ function initCountUp() {
   return () => ctx.revert()
 }
 
-export { initContentRevealScroll, initActiveHeader, initCountUp }
+function initReelScale() {
+  const reel = document.querySelector('.c-reel')
+  const swiper = document.querySelector('.c-reel__swiper')
+
+  if (!reel || !swiper) return
+
+  const ctx = gsap.context(() => {
+    gsap.fromTo(swiper,
+      { scale: 1 },
+      {
+        scale: 1.1,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: reel,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true
+        }
+      }
+    )
+  })
+
+  return () => ctx.revert()
+}
+
+export { initContentRevealScroll, initActiveHeader, initCountUp, initReelScale }
