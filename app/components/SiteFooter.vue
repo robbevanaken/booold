@@ -28,6 +28,9 @@
             <li>
               <a class="c-btn-link" href="tel:+32494487762">Whatsapp</a>
             </li>
+            <li>
+              <a class="c-btn-link" target="_blank" href="https://open.spotify.com/playlist/65vC87oYNWfBAg7MIE1ZZt?si=f9681a6ebcf941be">Spotify</a>
+            </li>
           </ul>
         </div>
         <div class="col-span-12 lg:col-span-3">

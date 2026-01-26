@@ -30,6 +30,7 @@ import 'swiper/css'
 const images = [
   { src: '/images/reel/mockup-dwb.webp', alt: 'Website for De Wilde - Braems' },
   { src: '/images/reel/mockup-ngis.webp', alt: 'Website for NGIS Wireless' },
+  { src: '/images/reel/mockup-booold.webp', alt: 'Website for Booold Studio' },
 ]
 </script>
 
