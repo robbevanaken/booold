@@ -9,10 +9,10 @@
           <h3 class="c-site-footer__subtitle">Navigation</h3>
           <ul class="c-site-footer__list">
             <li>
-              <a class="btn-animate-chars" href="/about"><span data-button-animate-chars="">About</span></a>
+              <a class="c-btn-link" href="/about">About</a>
             </li>
             <li>
-              <a class="btn-animate-chars" href="/contact"><span data-button-animate-chars="">Contact</span></a>
+              <a class="c-btn-link" href="/contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -20,13 +20,13 @@
           <h3 class="c-site-footer__subtitle">Socials</h3>
           <ul class="c-site-footer__list">
             <li>
-              <a class="btn-animate-chars" href="https://www.instagram.com/boooldstudio/" target="_blank"><span data-button-animate-chars="">Instagram</span></a>
+              <a class="c-btn-link" href="https://www.instagram.com/boooldstudio/" target="_blank">Instagram</a>
             </li>
             <li>
-              <a class="btn-animate-chars" href="https://www.linkedin.com/company/booold" target="_blank"><span data-button-animate-chars="">Linkedin</span></a>
+              <a class="c-btn-link" href="https://www.linkedin.com/company/booold" target="_blank">Linkedin</a>
             </li>
             <li>
-              <a class="btn-animate-chars" href="tel:+32494487762"><span data-button-animate-chars="">Whatsapp</span></a>
+              <a class="c-btn-link" href="tel:+32494487762">Whatsapp</a>
             </li>
           </ul>
         </div>
@@ -34,10 +34,10 @@
           <h3 class="c-site-footer__subtitle">Contact me</h3>
           <ul class="c-site-footer__list">
             <li>
-              <a class="btn-animate-chars" href="mailto:hello@boooldstudio.com" target="_blank"><span data-button-animate-chars="">hello@boooldstudio.com</span></a>
+              <a class="c-btn-link" href="mailto:hello@boooldstudio.com" target="_blank">hello@boooldstudio.com</a>
             </li>
             <li>
-              <a class="btn-animate-chars" href="https://www.linkedin.com/company/booold" target="_blank"><span data-button-animate-chars="">+32 494 48 77 62</span></a>
+              <a class="c-btn-link" href="https://www.linkedin.com/company/booold" target="_blank">+32 494 48 77 62</a>
             </li>
           </ul>
         </div>

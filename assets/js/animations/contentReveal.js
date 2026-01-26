@@ -1,82 +1,43 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { SplitText } from 'gsap/SplitText'
 
-gsap.registerPlugin(ScrollTrigger)
-
-function splitTextIntoLines(element) {
-  const text = element.textContent
-  const words = text.split(/\s+/)
-
-  // Temporarily fill with spans to measure lines
-  element.innerHTML = words.map(word => `<span class="word">${word}</span>`).join(' ')
-
-  const wordSpans = element.querySelectorAll('.word')
-  const lines = []
-  let currentLine = []
-  let currentTop = null
-
-  wordSpans.forEach(span => {
-    const top = span.offsetTop
-    if (currentTop === null) currentTop = top
-
-    if (top !== currentTop) {
-      lines.push(currentLine)
-      currentLine = [span.textContent]
-      currentTop = top
-    } else {
-      currentLine.push(span.textContent)
-    }
-  })
-
-  if (currentLine.length) lines.push(currentLine)
-
-  // Rebuild with line wrappers
-  element.innerHTML = lines.map(line =>
-    `<span class="line" style="display:block;overflow:hidden;"><span class="line-inner" style="display:block;">${line.join(' ')}</span></span>`
-  ).join('')
-
-  return element.querySelectorAll('.line-inner')
-}
+gsap.registerPlugin(ScrollTrigger, SplitText)
 
 function initContentRevealScroll() {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-
   const elements = document.querySelectorAll('[data-reveal]')
 
   if (!elements.length) return
 
   const ctx = gsap.context(() => {
     elements.forEach(element => {
-      // Config from attributes or defaults
       const duration = parseFloat(element.getAttribute('data-duration') || '0.6')
       const stagger = parseFloat(element.getAttribute('data-stagger') || '100') / 1000
       const delay = parseFloat(element.getAttribute('data-delay') || '0') / 1000
       const start = element.getAttribute('data-start') || 'top 85%'
 
-      // Split text into lines
-      const lines = splitTextIntoLines(element)
+      gsap.set(element, { opacity: 1 })
 
-      // Reduced motion: show immediately
-      if (prefersReduced) {
-        gsap.set(lines, { clearProps: 'all' })
-        return
-      }
+      SplitText.create(element, {
+        type: "words,lines",
+        linesClass: "line",
+        autoSplit: true,
+        mask: "lines",
+        onSplit: (self) => {
+          if (prefersReduced) return
 
-      // Initial hidden state - lines start below (100%)
-      gsap.set(lines, { yPercent: 100 })
-
-      // Reveal on scroll
-      ScrollTrigger.create({
-        trigger: element,
-        start: start,
-        once: true,
-        onEnter: () => {
-          gsap.to(lines, {
-            yPercent: 0,
+          return gsap.from(self.lines, {
+            yPercent: 100,
             duration: duration,
             delay: delay,
             stagger: stagger,
-            ease: 'power4.out'
+            ease: "expo.out",
+            scrollTrigger: {
+              trigger: element,
+              start: start,
+              once: true
+            }
           })
         }
       })

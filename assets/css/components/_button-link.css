@@ -1,0 +1,16 @@
+.c-btn-link {
+    @apply relative;
+    @apply pb-1;
+}
+
+.c-btn-link::after {
+    content: '';
+    @apply w-0 h-[0.0625rem] bg-white/50;
+    @apply absolute bottom-0 left-0;
+    @apply transition-all duration-500 ease-in-out;
+}
+
+.c-btn-link:hover:after, 
+.c-btn-link:focus-visible:after {
+    @apply w-full;
+}

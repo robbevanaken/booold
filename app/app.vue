@@ -8,7 +8,6 @@
   import { onMounted } from 'vue'
   import { initLenis } from "../../assets/js/animations/lenis.js";
   import { initContentRevealScroll, initActiveHeader, initCountUp } from "../../assets/js/animations/contentReveal.js";
-  import { initButtonCharacterStagger } from "../../assets/js/animations/textHover.js";
   import { initCheckSectionThemeScroll } from "../../assets/js/animations/sectionThemes.js";
 
   onMounted(() => {
@@ -16,7 +15,6 @@
     initContentRevealScroll();
     initActiveHeader();
     initCountUp();
-    initButtonCharacterStagger();
     initCheckSectionThemeScroll();
   });
 </script>

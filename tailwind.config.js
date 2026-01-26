@@ -23,7 +23,7 @@ module.exports = {
         "xs": ["clamp(10px, 1vw, 12px)", 1],
         "base": ["clamp(14px, 1.5vw, 16px)", 1.5],
         "md": ["clamp(16px, 1.55vw, 22px)", 1.5],
-        "lg": ["clamp(24px, 2.5vw, 40px)", 1.7],
+        "lg": ["clamp(24px, 2.5vw, 72px)", 1.7],
         "xl": ["clamp(28px, 3vw, 56px)", 1.25],
         "xxl": ["clamp(40px, 5vw, 64px)", 1.15],
         "xxxl": ["clamp(64px, 6vw, 94px)", 1.15],

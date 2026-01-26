@@ -1,8 +1,8 @@
 <template>
     <nav class="c-navigation-primary" :class="{'c-navigation-primary--inverse': inverse}">
         <ul class="c-navigation-primary__list">
-            <li><a class="btn-animate-chars" href="/about"><span data-button-animate-chars="">About</span></a></li>
-            <li><a class="btn-animate-chars" href="/contact"><span data-button-animate-chars="">Contact</span></a></li>
+            <li><a class="c-btn-link" href="/about">About</a></li>
+            <li><a class="c-btn-link" href="/contact">Contact</a></li>
         </ul>
     </nav>
 </template>
