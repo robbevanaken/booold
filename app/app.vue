@@ -9,6 +9,7 @@
   import { initLenis } from "../../assets/js/animations/lenis.js";
   import { initContentRevealScroll, initActiveHeader, initCountUp } from "../../assets/js/animations/contentReveal.js";
   import { initCheckSectionThemeScroll } from "../../assets/js/animations/sectionThemes.js";
+  import { initHighlightText } from "../../assets/js/animations/highlightText.js";
 
   onMounted(() => {
     initLenis();
@@ -16,6 +17,7 @@
     initActiveHeader();
     initCountUp();
     initCheckSectionThemeScroll();
+    initHighlightText();
   });
 </script>
 

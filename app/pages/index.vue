@@ -6,6 +6,7 @@
       <HomeAbout />
       <HomeNumbers />
       <HomeReel />
+      <HomeQuote />
     </main>
     <SiteFooter />
   </div>

@@ -1,1 +1,25 @@
-.c-quote {}
+.c-quote {
+    @apply py-[8rem] md:py-[12rem] lg:py-[16rem];
+}
+
+.c-quote__icon {
+    @apply bg-orange rounded-full;
+    @apply flex items-center justify-center;
+    @apply w-[1.625rem] h-[1.625rem];
+    @apply mb-6;
+}
+
+.c-quote__icon svg {
+    @apply w-[1.125rem] h-[1.125rem];
+}
+
+.c-quote__text {
+    @apply text-lg-scaleup text-white tracking-tight leading-[120%] font-medium;
+    @apply transition-colors duration-300 ease-in-out;
+}
+
+
+/* Extra styling for body theme change */
+[data-theme-nav="light"] .c-quote__text {
+    @apply text-black;
+}
