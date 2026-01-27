@@ -16,8 +16,6 @@ function initCheckSectionThemeScroll() {
       end: "bottom top",
       onEnter: () => setTheme(theme, bgTheme),
       onEnterBack: () => setTheme(theme, bgTheme),
-      onLeave: () => setTheme("light", null),
-      onLeaveBack: () => setTheme("light", null),
     });
   });
 

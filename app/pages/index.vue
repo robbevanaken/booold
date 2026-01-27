@@ -7,6 +7,7 @@
       <HomeNumbers />
       <HomeReel />
       <HomeQuote />
+      <FeaturedCases />
     </main>
     <SiteFooter />
   </div>

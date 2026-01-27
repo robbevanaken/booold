@@ -1,0 +1,56 @@
+/* Section container */
+.c-featured-cases {
+    @apply overflow-hidden pb-[3.5rem] md:pb-[8.75rem];
+}
+
+.c-featured-cases__title {
+    @apply font-dark-paradise text-xxxl text-white;
+    @apply mb-[3.5rem] lg:mb-[6.25rem];
+}
+
+.c-featured-cases__wrapper {
+    @apply flex flex-col md:flex-row;
+} 
+
+/* Horizontal scroll panels */
+.c-featured-cases__panel {
+    @apply flex-none w-full;
+}
+
+.c-featured-cases__panel {
+    @apply md:pr-[10%]
+}
+
+/* Case card */
+.c-featured-case {
+    @apply relative;
+}
+
+.c-featured-case__content {
+    @apply pt-6 pl-2.5 pb-10;
+}
+
+.c-featured-case__title {
+    @apply text-white text-md-sec font-medium;
+}
+
+.c-featured-case__description {
+    @apply text-white/70 text-md font-medium;
+}
+
+.c-featured-case__image {
+    @apply aspect-[2/1] overflow-hidden;
+}
+
+.c-featured-case__image img {
+    @apply w-full h-full object-cover;
+}
+
+.c-featured-case__tags {
+    @apply flex items-center flex-wrap gap-1.5 mt-6;
+}
+
+.c-featured-case__tag {
+    @apply text-xs text-white/50 rounded-full border border-white/50 leading-[1.25rem];
+    @apply px-2.5 py-0.5;
+}

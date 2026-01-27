@@ -141,10 +141,10 @@ function initReelScale() {
   const ctx = gsap.context(() => {
     // Scale the reel container
     gsap.fromTo(reel,
-      { scale: 0.8 },
+      { scale: 1 },
       {
-        scale: 1,
-        ease: 'none',
+        scale: 1.1,
+        ease: "power3.out",
         scrollTrigger: {
           trigger: reel,
           start: 'top bottom',
@@ -159,7 +159,7 @@ function initReelScale() {
       { scale: 1 },
       {
         scale: 1.3,
-        ease: 'none',
+        ease: "power3.out",
         scrollTrigger: {
           trigger: reel,
           start: 'top bottom',

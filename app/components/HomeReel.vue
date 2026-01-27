@@ -33,15 +33,3 @@ const images = [
   { src: '/images/reel/mockup-booold.webp', alt: 'Website for Booold Studio' },
 ]
 </script>
-
-<style>
-.c-reel__swiper {
-  width: 100%;
-}
-
-.c-reel__image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-</style>

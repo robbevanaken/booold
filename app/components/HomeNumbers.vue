@@ -1,5 +1,5 @@
 <template>
-  <div class="c-numbers">
+  <div class="c-numbers" data-theme-section="light">
     <div class="o-container o-grid">
       <div class="col-span-6 md:col-span-3">
         <div class="c-numbers__number">
@@ -28,9 +28,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'HomeNumbers',
-}
-</script>
