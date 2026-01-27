@@ -139,10 +139,26 @@ function initReelScale() {
   if (!reel || !swiper) return
 
   const ctx = gsap.context(() => {
+    // Scale the reel container
+    gsap.fromTo(reel,
+      { scale: 0.8 },
+      {
+        scale: 1,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: reel,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true
+        }
+      }
+    )
+
+    // Scale the swiper inside
     gsap.fromTo(swiper,
       { scale: 1 },
       {
-        scale: 1.1,
+        scale: 1.3,
         ease: 'none',
         scrollTrigger: {
           trigger: reel,

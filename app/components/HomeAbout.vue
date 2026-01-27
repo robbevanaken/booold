@@ -10,9 +10,9 @@
             </div>
         </div>
         <div class="c-about-home__content">
-           <div class="o-container o-grid gap-y-10">
+           <div class="o-container o-grid">
                 <div class="col-span-12 md:col-span-4 lg:col-span-3 md:col-start-2 lg:col-start-3">
-                    <div class="c-about-home__content-canvas-wrapper">
+                    <div class="c-about-home__content-canvas-wrapper hidden md:block">
                         <div 
                             class="c-about-home__content-canvas"
                             ref="unicordContainer"
