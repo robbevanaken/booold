@@ -10,7 +10,7 @@
                 <div class="col-span-12 md:col-span-10 lg:col-span-8 lg:col-start-2">
                     <div class="c-featured-cases__wrapper">
                         <div class="c-featured-cases__panel" data-horizontal-scroll-panel v-for="(caseItem, index) in cases" :key="index">
-                            <div class="c-featured-case__wrapper">
+                            <a class="c-featured-case__wrapper" :aria-label="caseItem.title" target="_blank" :href="caseItem.link">
                                 <div class="c-featured-case">
                                     <div class="c-featured-case__image">
                                         <img :src="caseItem.src" :alt="caseItem.alt">
@@ -23,7 +23,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -39,6 +39,7 @@ const cases = [
         description: 'A custom Wordpress template for a major 5G solutions provider.',
         src: '/images/reel/mockup-ngis.webp',
         alt: 'Website for NGIS Wireless',
+        link: 'https://ngis-wireless.com',
         tags: ["Wordpress", "PHP", "Javascript"]
     },
     {
@@ -46,6 +47,7 @@ const cases = [
         description: 'A custom Wordpress template for a contractor.',
         src: '/images/reel/mockup-dwb.webp',
         alt: 'Website for De Wilde - Braems',
+        link: 'https://dewilde-braems.be/',
         tags: ["Wordpress", "PHP", "Javascript"]
     },
 ]
