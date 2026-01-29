@@ -1,6 +1,9 @@
 <template>
   <div data-theme-nav="light">
     <NuxtPage />
+    <ClientOnly>
+      <CursorCase />
+    </ClientOnly>
   </div>
 </template>
 

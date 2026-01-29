@@ -22,6 +22,10 @@
 }
 
 /* Case card */
+.c-featured-case__wrapper {
+    @apply md:cursor-none;
+}
+
 .c-featured-case {
     @apply relative;
 }
@@ -44,6 +48,11 @@
 
 .c-featured-case__image img {
     @apply w-full h-full object-cover;
+    @apply transition-[filter,transform] duration-500 ease-out;
+}
+
+.c-featured-case__wrapper:hover .c-featured-case__image img {
+    @apply blur-sm scale-105;
 }
 
 .c-featured-case__tags {

@@ -1,0 +1,34 @@
+.c-cursor-case {
+    @apply hidden md:block;
+    @apply fixed top-0 left-0 pointer-events-none z-50;
+    @apply opacity-0 scale-50;
+    @apply transition-[opacity,transform] duration-100 ease-out;
+}
+
+.c-cursor-case.is-active {
+    @apply opacity-100 scale-100;
+}
+
+.c-cursor-case__inner {
+    @apply relative flex items-center justify-center;
+    @apply bg-green rounded-full;
+    @apply w-[10rem] h-[10rem];
+}
+
+.c-cursor-case__text {
+    @apply absolute inset-0 w-full h-full;
+    @apply animate-spin;
+    animation-duration: 8s;
+}
+
+.c-cursor-case__text text {
+    @apply font-inter fill-black text-sm font-medium tracking-tight;
+}
+
+.c-cursor-case__icon {
+    @apply w-7 h-7;
+}
+
+.c-cursor-case__icon path {
+    @apply fill-black;
+}
