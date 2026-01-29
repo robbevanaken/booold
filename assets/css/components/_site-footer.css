@@ -1,7 +1,11 @@
+.c-site-footer__wrap {
+    @apply relative min-h-screen overflow-hidden;
+}
+
 .c-site-footer {
     @apply min-h-screen bg-black;
     @apply flex flex-col justify-between gap-20;
-    @apply pb-5 pt-10 lg:pt-[6.25rem] overflow-hidden;
+    @apply pb-5 pt-10 lg:pt-[6.25rem];
 }
 
 .c-site-footer__title {
