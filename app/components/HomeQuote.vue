@@ -6,7 +6,7 @@
                     <IconStar />
                 </div>
                 <div class="c-quote__text" data-highlight-text>
-                    <p>The best websites are built where <span class="u-decorate">strategy</span> meets <span class="u-decorate">feeling</span>. Thoughtful design and just enough uniqueness to make brands stand out</p>
+                    <p>The best websites are built where <span class="u-decorate">strategy</span> meets <span class="u-decorate">feeling</span>. Thoughtful design and just enough uniqueness to make your brand stand out</p>
                 </div>
             </div>
         </div>
