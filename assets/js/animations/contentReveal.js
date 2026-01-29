@@ -15,7 +15,7 @@ function initContentRevealScroll() {
       const duration = parseFloat(element.getAttribute('data-duration') || '0.6')
       const stagger = parseFloat(element.getAttribute('data-stagger') || '100') / 1000
       const delay = parseFloat(element.getAttribute('data-delay') || '0') / 1000
-      const start = element.getAttribute('data-start') || 'top 85%'
+      const start = element.getAttribute('data-start') || 'top 75%'
 
       gsap.set(element, { opacity: 1 })
 
@@ -97,7 +97,7 @@ function initCountUp() {
       // Config from attributes
       const duration = parseFloat(element.getAttribute('data-duration') || '2')
       const delay = parseFloat(element.getAttribute('data-delay') || '0') / 1000
-      const start = element.getAttribute('data-start') || 'top 100%'
+      const start = element.getAttribute('data-start') || 'top 75%'
 
       // Object to animate
       const counter = { value: 0 }
