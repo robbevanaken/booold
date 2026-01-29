@@ -1,6 +1,6 @@
 .c-site-header {
     @apply fixed top-0 left-0 w-full z-50;
-    @apply md:py-10;
+    @apply py-6 md:py-10;
 }
 
 
