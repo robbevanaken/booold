@@ -1,0 +1,25 @@
+.c-cta {
+    @apply relative py-[4rem] md:py-[5rem] lg:py-[6.5rem] overflow-hidden;
+}
+
+.c-cta h2,
+.c-cta .c-cta__btn {
+    @apply z-[1];
+}
+
+.c-cta__canvas {
+    @apply absolute top-0 left-0 right-0 -bottom-[6.25rem];
+}
+
+.c-cta__content {
+    @apply flex flex-col justify-center items-center;
+}
+
+.c-cta__title {
+    @apply max-w-[36rem];
+    @apply text-white text-cta leading-[125%] text-center;
+}
+
+.c-cta__btn {
+    @apply mt-[2.875rem];
+}

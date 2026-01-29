@@ -24,6 +24,7 @@ module.exports = {
         "base": ["clamp(14px, 1.5vw, 16px)", 1.5],
         "md": ["clamp(16px, 1.55vw, 22px)", 1.5],
         "md-sec": ["clamp(18px, 1.55vw, 24px)", 1.5],
+        "cta": ["clamp(28px, 2.75vw, 40px)", 1.7],
         "lg": ["clamp(24px, 2.5vw, 72px)", 1.7],
         "lg-scaleup": ["clamp(28px, 2.75vw, 78px)", 1.7],
         "xl": ["clamp(28px, 3vw, 56px)", 1.25],

@@ -8,6 +8,7 @@
       <HomeReel />
       <HomeQuote />
       <FeaturedCases />
+      <CTA />
     </main>
     <SiteFooter />
   </div>
