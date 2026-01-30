@@ -2,7 +2,7 @@
     @apply hidden md:block;
     @apply fixed top-0 left-0 pointer-events-none z-50;
     @apply opacity-0 scale-50;
-    @apply transition-all duration-100 ease-out;
+    transition: opacity 300ms ease-out, transform 100ms ease-out;
 }
 
 .c-cursor-case.is-active {
@@ -12,7 +12,7 @@
 .c-cursor-case__inner {
     @apply relative flex items-center justify-center;
     @apply bg-green rounded-full;
-    @apply w-[16rem] h-[16rem];
+    @apply w-[12rem] h-[12rem];
 }
 
 .c-cursor-case__text {
