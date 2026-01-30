@@ -4,7 +4,7 @@
 }
 
 .c-featured-cases__col-offset {
-    @apply md:mt-[50%];
+    @apply md:mt-[35%];
 }
 
 .c-featured-cases__title {
