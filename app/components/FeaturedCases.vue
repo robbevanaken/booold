@@ -10,7 +10,7 @@
                 <div class="c-featured-cases__panel">
                     <a class="c-featured-case__wrapper" :aria-label="caseItem.title" target="_blank" :href="caseItem.link" data-cursor-case>
                         <div class="c-featured-case">
-                            <div class="c-featured-case__image">
+                            <div data-parallax-img class="c-featured-case__image">
                                 <img :src="caseItem.src" :alt="caseItem.alt">
                             </div>
                             <div class="c-featured-case__content">

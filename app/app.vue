@@ -13,6 +13,7 @@
   import { initContentRevealScroll, initActiveHeader, initCountUp, initReelScale } from "../../assets/js/animations/contentReveal.js";
   import { initCheckSectionThemeScroll } from "../../assets/js/animations/sectionThemes.js";
   import { initHighlightText } from "../../assets/js/animations/highlightText.js";
+  import { initParallaxImages } from "../../assets/js/animations/parallaxImages.js";
 
   onMounted(() => {
     initLenis();
@@ -22,6 +23,7 @@
     initCheckSectionThemeScroll();
     initHighlightText();
     initReelScale();
+    initParallaxImages();
   });
 </script>
 

@@ -1,0 +1,7 @@
+[data-parallax-img] {
+    @apply relative overflow-hidden;
+}
+
+[data-parallax-img] img {
+    @apply w-full h-[110%] object-cover will-change-transform;
+}
