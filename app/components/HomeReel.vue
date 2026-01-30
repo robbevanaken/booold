@@ -7,10 +7,10 @@
           :slides-per-view="1"
           :loop="true"
           :autoplay="{
-            delay: 1000,
+            delay: 2000,
             disableOnInteraction: false
           }"
-          :speed="1"
+          :speed="1000"
           class="c-reel__swiper"
         >
           <SwiperSlide v-for="(image, index) in images" :key="index">
