@@ -13,7 +13,6 @@
   import { initContentRevealScroll, initActiveHeader, initCountUp, initReelScale } from "../../assets/js/animations/contentReveal.js";
   import { initCheckSectionThemeScroll } from "../../assets/js/animations/sectionThemes.js";
   import { initHighlightText } from "../../assets/js/animations/highlightText.js";
-  import { initHorizontalScroll } from "../../assets/js/animations/horizontalScroll.js";
 
   onMounted(() => {
     initLenis();
@@ -23,7 +22,6 @@
     initCheckSectionThemeScroll();
     initHighlightText();
     initReelScale();
-    initHorizontalScroll();
   });
 </script>
 

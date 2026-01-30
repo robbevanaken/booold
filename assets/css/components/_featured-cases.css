@@ -3,6 +3,10 @@
     @apply overflow-hidden pb-[3.5rem] md:pb-[8.75rem];
 }
 
+.c-featured-cases__col-offset {
+    @apply md:mt-[50%];
+}
+
 .c-featured-cases__title {
     @apply font-dark-paradise text-xxxl text-white;
     @apply mb-[3.5rem] lg:mb-[6.25rem];
@@ -15,10 +19,6 @@
 /* Horizontal scroll panels */
 .c-featured-cases__panel {
     @apply flex-none w-full;
-}
-
-.c-featured-cases__panel {
-    @apply md:pr-[10%]
 }
 
 /* Case card */
@@ -43,7 +43,7 @@
 }
 
 .c-featured-case__image {
-    @apply aspect-[2/1] overflow-hidden;
+    @apply aspect-[1/1] overflow-hidden;
 }
 
 .c-featured-case__image img {

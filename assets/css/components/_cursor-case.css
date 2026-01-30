@@ -12,7 +12,7 @@
 .c-cursor-case__inner {
     @apply relative flex items-center justify-center;
     @apply bg-green rounded-full;
-    @apply w-[12rem] h-[12rem];
+    @apply w-[16rem] h-[16rem];
 }
 
 .c-cursor-case__text {

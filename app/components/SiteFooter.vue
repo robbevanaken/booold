@@ -76,7 +76,7 @@ onMounted(() => {
   if (!el) return
 
   const isMobile = window.innerWidth <= 991
-  const blurAmount = isMobile ? 2.5 : 25
+  const blurAmount = isMobile ? 2.5 : 7.5
 
   ctx = gsap.context(() => {
     const inner = el.querySelector('[data-footer-parallax-inner]')
