@@ -14,3 +14,8 @@
 .c-btn-link:focus-visible:after {
     @apply w-full;
 }
+
+/* Dark type */
+.c-btn-link--dark::after {
+    @apply bg-black/50;
+}

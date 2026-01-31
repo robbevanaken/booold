@@ -1,8 +1,8 @@
 <template>
     <nav class="c-navigation-primary" :class="{'c-navigation-primary--inverse': inverse}">
         <ul class="c-navigation-primary__list">
-            <li><a class="c-btn-link" href="/about">About</a></li>
-            <li><a class="c-btn-link" href="/contact">Contact</a></li>
+            <li><a :class="inverse ? 'c-btn-link c-btn-link--light' : 'c-btn-link c-btn-link--dark'" href="/about">About</a></li>
+            <li><a :class="inverse ? 'c-btn-link c-btn-link--light' : 'c-btn-link c-btn-link--dark'" href="/contact">Contact</a></li>
         </ul>
     </nav>
 </template>

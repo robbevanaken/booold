@@ -71,13 +71,15 @@
 }
 
 .c-contact__status {
-    @apply text-base mt-4;
+    @apply w-full px-4 py-5;
+    @apply bg-green;
+    @apply text-base text-black mt-4 text-center;
 }
 
 .c-contact__status--success {
-    @apply text-green;
+    @apply bg-green;
 }
 
 .c-contact__status--error {
-    @apply text-orange;
+    @apply bg-orange;
 }

@@ -84,7 +84,7 @@
                 id="message"
                 v-model="form.message"
                 class="c-contact__textarea"
-                placeholder="Tell us about your project..."
+                placeholder="Tell me about your project..."
                 rows="6"
                 required
               ></textarea>
@@ -132,27 +132,22 @@ const handleSubmit = async () => {
   submitStatus.value = null
 
   try {
-    // TODO: Replace with your form submission endpoint
-    // Option 1: Formspree (easiest)
-    // const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify(form)
-    // })
+    const response = await fetch('https://formspree.io/f/xdazqnzq', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(form)
+    })
 
-    // Option 2: Nuxt server route
-    // const response = await fetch('/api/contact', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify(form)
-    // })
-
-    // Simulated success for now
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    submitStatus.value = 'success'
-
-    // Reset form
-    Object.keys(form).forEach(key => form[key] = '')
+    if (response.ok) {
+      submitStatus.value = 'success'
+      // Reset form
+      Object.keys(form).forEach(key => form[key] = '')
+    } else {
+      submitStatus.value = 'error'
+    }
   } catch (error) {
     submitStatus.value = 'error'
   } finally {
