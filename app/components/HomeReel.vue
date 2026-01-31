@@ -10,7 +10,7 @@
             delay: 2000,
             disableOnInteraction: false
           }"
-          :speed="1000"
+          :speed="1"
           class="c-reel__swiper"
         >
           <SwiperSlide v-for="(image, index) in images" :key="index">

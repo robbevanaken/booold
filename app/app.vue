@@ -55,13 +55,9 @@
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.3s ease-in-out;
+  transition: all 0.4s;
 }
-
-.page-enter-from {
-  opacity: 0;
-}
-
+.page-enter-from,
 .page-leave-to {
   opacity: 0;
 }
