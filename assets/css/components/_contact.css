@@ -16,9 +16,41 @@
     @apply text-base text-black;
 }
 
-.c-contact__form {
+.c-contact__form-wrapper {
     @apply col-span-full lg:col-span-10 lg:col-start-2;
+    @apply relative;
+}
+
+.c-contact__form {
     @apply flex flex-col gap-6 md:gap-9;
+}
+
+.c-contact__loader {
+    @apply absolute inset-0 z-10;
+    @apply flex items-center justify-center;
+    @apply bg-white/80;
+}
+
+.c-contact__spinner {
+    @apply w-10 h-10;
+    @apply border-2 border-black/20 border-t-orange;
+    @apply rounded-full;
+    @apply animate-spin;
+}
+
+.c-contact__success {
+    @apply col-span-full lg:col-span-10 lg:col-start-2;
+    @apply py-16 text-center;
+    @apply bg-green;
+}
+
+.c-contact__success-title {
+    @apply font-dark-paradise text-xxl tracking-tight;
+    @apply mb-4;
+}
+
+.c-contact__success-text {
+    @apply text-base text-black;
 }
 
 .c-contact__row {
@@ -57,6 +89,16 @@
 .c-contact__select:focus,
 .c-contact__textarea:focus {
     @apply border-orange;
+}
+
+.c-contact__input--error,
+.c-contact__select--error,
+.c-contact__textarea--error {
+    @apply border-orange;
+}
+
+.c-contact__error {
+    @apply text-sm text-orange;
 }
 
 .c-contact__select {
