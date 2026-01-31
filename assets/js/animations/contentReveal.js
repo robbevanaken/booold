@@ -12,7 +12,7 @@ function initContentRevealScroll() {
 
   const ctx = gsap.context(() => {
     elements.forEach(element => {
-      const duration = parseFloat(element.getAttribute('data-duration') || '0.6')
+      const duration = parseFloat(element.getAttribute('data-duration') || '1.5')
       const stagger = parseFloat(element.getAttribute('data-stagger') || '100') / 1000
       const delay = parseFloat(element.getAttribute('data-delay') || '0') / 1000
       const start = element.getAttribute('data-start') || 'top 75%'
