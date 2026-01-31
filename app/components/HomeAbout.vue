@@ -4,7 +4,7 @@
             <div class="col-span-12 md:col-span-8 lg:col-span-6 md:col-start-2 lg:col-start-2">
                 <div class="c-about-home__intro">
                     <p data-reveal>
-                        What's up! I'm Robbe. A <span class="u-decorate">web designer</span> and pixel-precise <span class="u-decorate">developer</span>. I tailor the web to your needs, using both my head and my heart.
+                        I'm Robbe. A <span class="u-decorate">web designer</span> and pixel-precise <span class="u-decorate">developer</span>. I tailor the web to your needs, using both my head and my heart.
                     </p>
                 </div>
             </div>
