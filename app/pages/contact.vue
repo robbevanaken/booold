@@ -90,12 +90,13 @@
               ></textarea>
             </div>
 
-            <button type="submit" class="c-btn c-btn--dark" :disabled="isSubmitting">
-              <span class="c-btn__inner" data-magnetic-inner-target>
-                {{ isSubmitting ? 'Sending...' : 'Send message' }}
-                <IconArrow />
-              </span>
-            </button>
+            <ButtonDefault
+              tag="button"
+              type="submit"
+              :dark="true"
+              :label="isSubmitting ? 'Sending...' : 'Send message'"
+              :disabled="isSubmitting"
+            />
 
             <p v-if="submitStatus === 'success'" class="c-contact__status c-contact__status--success">
               Thanks! We'll be in touch soon.

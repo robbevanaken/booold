@@ -1,8 +1,11 @@
 <template>
-    <a
+    <component
+        :is="tag"
         ref="magnetRef"
-        class="c-btn"
-        :href="url"
+        :class="dark ? 'c-btn c-btn--dark' : 'c-btn'"
+        :href="tag === 'a' ? url : undefined"
+        :type="tag === 'button' ? type : undefined"
+        :disabled="tag === 'button' ? disabled : undefined"
         :data-magnetic-strength="strength"
         :data-magnetic-strength-inner="strengthInner"
     >
@@ -10,7 +13,7 @@
             {{ label }}
             <IconArrow />
         </span>
-    </a>
+    </component>
 </template>
 
 <script setup>
@@ -18,6 +21,10 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import gsap from 'gsap'
 
 const props = defineProps({
+    tag: {
+        type: String,
+        default: 'a'
+    },
     url: {
         type: String,
         default: "/"
@@ -25,6 +32,18 @@ const props = defineProps({
     label: {
         type: String,
         default: "Read more"
+    },
+    type: {
+        type: String,
+        default: 'button'
+    },
+    dark: {
+        type: Boolean,
+        default: false
+    },
+    disabled: {
+        type: Boolean,
+        default: false
     },
     strength: {
         type: Number,
