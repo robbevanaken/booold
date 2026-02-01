@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(tree:*)",
+      "Bash(npm run build:*)",
+      "Bash(node --version:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }

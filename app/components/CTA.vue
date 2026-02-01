@@ -19,7 +19,9 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { useUnicornStudio } from '~/composables/useUnicornStudio'
 
-useUnicornStudio()
+const unicordContainer = ref(null)
+useUnicornStudio(unicordContainer)
 </script>

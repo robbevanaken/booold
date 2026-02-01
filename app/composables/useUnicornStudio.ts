@@ -1,30 +1,56 @@
-import { nextTick, onMounted } from 'vue'
+import { onMounted, onBeforeUnmount, ref, type Ref } from 'vue'
 
-export function useUnicornStudio() {
-  const init = () => {
-    if (!window.UnicornStudio) {
-      window.UnicornStudio = { isInitialized: false }
-      const script = document.createElement('script')
-      script.src = 'https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.0.0/dist/unicornStudio.umd.js'
-      script.onload = () => {
-        window.UnicornStudio.init()
-        window.UnicornStudio.isInitialized = true
-      }
-      document.head.appendChild(script)
-    } else if (window.UnicornStudio.isInitialized) {
-      window.UnicornStudio.init()
-    } else {
-      // Script is loading but not ready yet
-      const checkReady = setInterval(() => {
-        if (window.UnicornStudio?.init) {
-          clearInterval(checkReady)
-          window.UnicornStudio.init()
-        }
-      }, 100)
+export function useUnicornStudio(containerRef: Ref<any>) {
+  const renderer = ref<any>(null)
+  const canvas = ref<any>(null)
+
+  const init = async () => {
+    // Only run on client
+    if (typeof window === 'undefined') return
+
+    const container = containerRef.value
+    if (!container) {
+      console.warn('No container element found for gradient renderer')
+      return
+    }
+
+    // Dynamic import to avoid SSR issues
+    const { GradientRenderer } = await import('~/utils/GradientRenderer')
+
+    // Create a canvas inside the container
+    const canvasEl = document.createElement('canvas')
+    canvasEl.style.width = '100%'
+    canvasEl.style.height = '100%'
+    canvasEl.style.display = 'block'
+    container.appendChild(canvasEl)
+    canvas.value = canvasEl
+
+    renderer.value = new GradientRenderer(canvasEl)
+    renderer.value.init()
+  }
+
+  const destroy = () => {
+    if (renderer.value) {
+      renderer.value.destroy()
+      renderer.value = null
+    }
+    if (canvas.value) {
+      canvas.value.remove()
+      canvas.value = null
     }
   }
 
   onMounted(() => {
-    nextTick(init)
+    // Small delay to ensure DOM is ready
+    requestAnimationFrame(() => init())
   })
+
+  onBeforeUnmount(() => {
+    destroy()
+  })
+
+  return {
+    renderer,
+    destroy
+  }
 }

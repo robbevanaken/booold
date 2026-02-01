@@ -39,7 +39,8 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 import IconGlobe from '~/components/IconGlobe.vue'
 import { useUnicornStudio } from '~/composables/useUnicornStudio'
 
-useUnicornStudio()
+const unicordContainer = ref(null)
+useUnicornStudio(unicordContainer)
 
 const currentTime = ref('')
 let timeInterval = null

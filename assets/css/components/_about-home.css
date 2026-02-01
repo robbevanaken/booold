@@ -17,7 +17,7 @@
 }
 
 .c-about-home__content-canvas {
-    @apply absolute top-0 left-0 right-0 -bottom-[6.25rem] -z-10;
+    @apply absolute inset-0 -z-10;
 }
 
 .c-about-home__content-text p {

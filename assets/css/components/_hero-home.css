@@ -3,7 +3,7 @@
 }
 
 .c-hero-home__canvas {
-    @apply absolute top-0 left-0 right-0 -bottom-[6.25rem] -z-10;
+    @apply absolute inset-0 -z-10;
 }
 
 .c-hero-home__body {
