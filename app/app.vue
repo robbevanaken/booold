@@ -1,64 +1,24 @@
 <template>
   <div data-theme-nav="light">
-    <NuxtPage />
-    <ClientOnly>
-      <CursorCase />
-    </ClientOnly>
+    <NuxtPage @page:finish="onPageFinish" />
+    <ClientOnly><CursorCase /></ClientOnly>
   </div>
 </template>
 
 <script setup>
-  import { onMounted, ref } from 'vue'
-  import { useRouter } from 'vue-router'
+import { nextTick } from 'vue'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
   import { initLenis } from "../../assets/js/animations/lenis.js";
-  import { initContentRevealScroll, initActiveHeader, initCountUp, initReelScale } from "../../assets/js/animations/contentReveal.js";
-  import { initCheckSectionThemeScroll } from "../../assets/js/animations/sectionThemes.js";
-  import { initHighlightText } from "../../assets/js/animations/highlightText.js";
-  import { initParallaxImages } from "../../assets/js/animations/parallaxImages.js";
 
-  const router = useRouter()
-  const cleanupFns = ref([])
+gsap.registerPlugin(ScrollTrigger)
 
-  const initAnimations = () => {
-    // Clean up previous animations
-    cleanupFns.value.forEach(fn => fn && fn())
-    cleanupFns.value = []
+const onPageFinish = async () => {
+  await nextTick()
+  ScrollTrigger.refresh(true)  // Global refresh post-transition
+}
 
-    // Initialize new animations and store cleanup functions
-    cleanupFns.value = [
-      initContentRevealScroll(),
-      initActiveHeader(),
-      initCountUp(),
-      initCheckSectionThemeScroll(),
-      initHighlightText(),
-      initReelScale(),
-      initParallaxImages()
-    ]
-  }
-
-  onMounted(() => {
-    initLenis()
-    initAnimations()
-  })
-
-  // Reinitialize animations after page transition completes
-  router.afterEach((to, from) => {
-    if (to.path !== from.path) {
-      // Wait for transition and DOM to update
-      setTimeout(() => {
-        initAnimations()
-      }, 350) // Slightly longer than page transition (300ms)
-    }
-  })
+onMounted(() => {
+  initLenis()  // Lenis is global, safe here
+})
 </script>
-
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-}
-</style>
