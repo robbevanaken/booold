@@ -3,6 +3,9 @@
     @apply py-6 md:py-6;
 }
 
+.c-site-header--inverse .c-btn-link {
+    @apply text-white;
+}
 
 .c-site-header--inverse .c-logo {
     @apply opacity-0;
