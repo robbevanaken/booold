@@ -8,7 +8,6 @@
     >
         <span class="c-btn__inner">
             {{ label }}
-            <IconArrow />
         </span>
     </component>
 </template>

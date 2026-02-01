@@ -38,7 +38,7 @@ body {
 }
 
 body::selection {
-    @apply text-white bg-orange/75;
+    @apply text-white bg-orange;
 }
 
 [data-theme-nav] {

@@ -1,11 +1,22 @@
+.c-navigation-primary {
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
 .c-navigation-primary--inverse {
     @apply text-white;
 }
 
 .c-navigation-primary__list {
-    @apply flex flex-row space-x-8;
+    @apply flex flex-row gap-12;
+    @apply transition-all duration-300 ease-in-out;
+    @apply pointer-events-none;
 }
 
 .c-navigation-primary__list a {
     @apply text-base;
+    @apply pointer-events-auto;
+}
+
+.c-navigation-primary__list:hover a {
+    @apply opacity-25;
 }

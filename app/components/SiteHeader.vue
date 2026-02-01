@@ -4,6 +4,7 @@
       <div class="flex items-center justify-between gap-8">
         <CompanyLogo :inverse="inverse" />
         <PrimaryNavigation :inverse="inverse" />
+        <ButtonDefault url="/contact" label="Get in contact" />
       </div>
     </div>
   </header>

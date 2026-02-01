@@ -1,0 +1,38 @@
+/* Hero */
+.c-about-hero {
+    @apply py-32 md:py-40 lg:py-48;
+}
+
+.c-about-hero__title h1 {
+    @apply text-cta font-medium text-black tracking-tight leading-[125%];
+}
+
+.c-about-hero__intro {
+    @apply mt-6 md:mt-0;
+}
+
+.c-about-hero__intro p {
+    @apply text-base text-black tracking-tight leading-[125%];
+}
+
+/* Canvas */
+.c-about__canvas {
+    @apply aspect-[3/1];
+}
+
+/* Article */
+.c-about-article {
+    @apply py-32 md:py-40 lg:py-48;
+}
+
+.c-about-article__title {
+    @apply mb-6 md:mb-[6rem];
+}
+
+.c-about-article__title h2 {
+    @apply text-xxl font-dark-paradise;
+}
+
+.c-about-article a {
+    @apply mt-8;
+}

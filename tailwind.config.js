@@ -40,6 +40,9 @@ module.exports = {
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
+      },
+      transitionTimingFunction: {
+        'bounce': 'cubic-bezier(0.68, -0.55, 0.27, 1.5)'
       }
     },
   },
