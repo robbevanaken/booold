@@ -34,7 +34,7 @@ onMounted(async () => {
     initCheckSectionThemeScroll(),
     initHighlightText(),
     initReelScale(),
-    initParallaxImages()
+    initParallaxImages(),
   ]
 })
 

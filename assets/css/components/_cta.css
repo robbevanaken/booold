@@ -17,7 +17,7 @@
 
 .c-cta__title {
     @apply max-w-[36rem];
-    @apply text-white text-cta leading-[125%] text-center;
+    @apply text-white text-cta font-normal leading-[125%] text-center;
 }
 
 .c-cta__btn {

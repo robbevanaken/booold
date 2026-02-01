@@ -6,7 +6,7 @@
 
 .c-site-header--inverse .c-logo {
     @apply opacity-0;
-    @apply translate-y-[100%];
+    @apply translate-y-[50%];
     @apply transition-all duration-300 ease-in-out;
 }
 
