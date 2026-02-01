@@ -49,7 +49,7 @@ body::selection {
     @apply bg-black;
 }
 
-[data-theme-nav="dark"] .c-site-header .c-btn-link {
+[data-theme-nav="dark"] .c-site-header--inverse .c-btn-link {
     @apply text-white;
 }
 
@@ -58,6 +58,14 @@ body::selection {
 }
 
 [data-theme-nav="light"] .c-site-header .c-btn-link {
+    @apply text-black;
+}
+
+[data-theme-nav="light"] .c-site-header--inverse .c-btn-link {
+    @apply text-white;
+}
+
+[data-theme-nav="light"] .c-site-header--inverse.active .c-btn-link {
     @apply text-black;
 }
 

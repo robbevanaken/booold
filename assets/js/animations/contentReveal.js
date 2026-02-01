@@ -97,7 +97,7 @@ function initCountUp() {
       // Config from attributes
       const duration = parseFloat(element.getAttribute('data-duration') || '2')
       const delay = parseFloat(element.getAttribute('data-delay') || '0') / 1000
-      const start = element.getAttribute('data-start') || 'top 75%'
+      const start = element.getAttribute('data-start') || 'top 95%'
 
       // Object to animate
       const counter = { value: 0 }
