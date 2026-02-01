@@ -1,5 +1,5 @@
 <template>
-    <div class="c-about-home" data-active-header>
+    <div class="c-about-home" data-active-header data-theme-section="light">
         <div class="o-container o-grid">
             <div class="col-span-12 md:col-span-8 lg:col-span-6 md:col-start-2 lg:col-start-2">
                 <div class="c-about-home__intro">

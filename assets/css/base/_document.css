@@ -48,3 +48,11 @@ body::selection {
 [data-theme-nav="dark"] {
     @apply bg-black;
 }
+
+[data-theme-nav="dark"] .c-btn-link {
+    @apply !text-white;
+}
+
+[data-theme-nav="light"] .c-btn-link {
+    @apply !text-black;
+}
