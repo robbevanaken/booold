@@ -7,14 +7,14 @@
         <div class="o-container o-grid">
           <div class="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-2">
             <div class="c-about-hero__title">
-              <h1>Booold Studio is a <span class="u-decorate">big name</span> for a one-man army. Built that way to give ideas, projects, and brands <span class="u-decorate">room to grow</span>.</h1>
+              <h1 data-reveal>Booold Studio is a <span class="u-decorate">big name</span> for a one-man army. Built that way to give ideas, projects, and brands <span class="u-decorate">room to grow</span>.</h1>
             </div>
           </div>
         </div>
         <div class="o-container o-grid">
           <div class="col-span-12 md:col-span-5 md:col-start-8 lg:col-span-4 lg:col-start-8">
             <div class="c-about-hero__intro">
-              <p>
+              <p data-reveal>
                 Led by one core designer–developer, the studio combines focused ownership with the flexibility of a trusted freelance network when projects require additional expertise.
                 Every project is guided from start to finish by one clear point of contact. That means direct communication, consistent quality, and the ability to scale intelligently without unnecessary overhead.
               </p>            
@@ -36,14 +36,14 @@
         <div class="o-container o-grid">
           <div class="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-2">
             <div class="c-about-article__title">
-              <h2>Who’s actually behind this?</h2>
+              <h2 data-reveal>Who’s actually behind this?</h2>
             </div>
           </div>
         </div>
         <div class="o-container o-grid">
           <div class="col-span-12 md:col-span-5 md:col-start-8 lg:col-span-4 lg:col-start-8">
             <div>
-              <p>
+              <p data-reveal>
                 My name is Robbe. Booold Studio focuses on design-driven websites and digital products that balance clarity, performance, and character. The goal is always the same: creating digital experiences that support brands, communicate clearly, and deliver measurable results.
                 <br><br>
                 The technical stack is chosen with longevity and maintainability in mind. Craft CMS is my CMS of choice, paired with modern front-end tools like Nuxt and Vue. This setup allows for flexible content management, strong performance, and custom solutions tailored to each project.
