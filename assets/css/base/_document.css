@@ -53,6 +53,14 @@ body::selection {
     @apply !text-white;
 }
 
+[data-theme-nav="dark"] .c-logo path {
+    @apply !fill-white;
+}
+
 [data-theme-nav="light"] .c-btn-link {
     @apply !text-black;
+}
+
+[data-theme-nav="light"] .c-logo path {
+    @apply !fill-black;
 }

@@ -10,10 +10,6 @@
     @apply transition-all duration-300 ease-in-out;
 }
 
-.c-site-header--inverse.active {
-    @apply mix-blend-difference;
-}
-
 .c-site-header--inverse.active .c-logo {
     @apply opacity-100;
     @apply translate-y-0;
