@@ -50,11 +50,18 @@ export class GradientRenderer {
   private targetMousePos = { x: 0.5, y: 0.5 }
   private dpi: number
   private isDestroyed = false
+  private isVisible = false
+  private observer: IntersectionObserver | null = null
+  private hasRenderedOnce = false
+  private lastFrameTime = 0
+  private targetFps = 30 // Throttle to 30fps for better performance
+  private frameInterval = 1000 / 30
 
   constructor(canvas: HTMLCanvasElement) {
     this.canvas = canvas
     this.layers = gradientData.history.filter(l => l.visible) as Layer[]
-    this.dpi = Math.min(gradientData.options.dpi || 1.5, window.devicePixelRatio)
+    // Lower DPI for better performance (was 1.5)
+    this.dpi = Math.min(gradientData.options.dpi || 1, window.devicePixelRatio, 1.5)
   }
 
   init(): boolean {
@@ -62,7 +69,8 @@ export class GradientRenderer {
       alpha: true,
       antialias: false,
       premultipliedAlpha: true,
-      preserveDrawingBuffer: false
+      preserveDrawingBuffer: false,
+      powerPreference: 'low-power' // Prefer integrated GPU
     })
 
     if (!gl) {
@@ -77,11 +85,33 @@ export class GradientRenderer {
     this.compileShaders()
     this.resize()
     this.setupMouseTracking()
-    this.render()
+    this.setupVisibilityObserver()
 
     window.addEventListener('resize', this.handleResize)
 
     return true
+  }
+
+  private setupVisibilityObserver(): void {
+    // Only render when canvas is visible in viewport
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        this.isVisible = entry.isIntersecting
+
+        if (this.isVisible && !this.animationId) {
+          // Resume rendering
+          this.lastFrameTime = performance.now()
+          this.render()
+        }
+      },
+      {
+        threshold: 0,
+        rootMargin: '50px' // Start rendering slightly before visible
+      }
+    )
+
+    this.observer.observe(this.canvas)
   }
 
   private setupBuffers(): void {
@@ -247,9 +277,7 @@ export class GradientRenderer {
     this.canvas.addEventListener('mouseleave', handleMouseLeave)
   }
 
-  private render = (): void => {
-    if (this.isDestroyed) return
-
+  private renderFrame(): void {
     const gl = this.gl!
     const time = (performance.now() - this.startTime) / 1000
 
@@ -337,6 +365,27 @@ export class GradientRenderer {
       }
     }
 
+    this.hasRenderedOnce = true
+  }
+
+  private render = (): void => {
+    if (this.isDestroyed) return
+
+    // Stop rendering if not visible (but render at least once)
+    if (!this.isVisible && this.hasRenderedOnce) {
+      this.animationId = 0
+      return
+    }
+
+    const now = performance.now()
+    const elapsed = now - this.lastFrameTime
+
+    // Throttle frame rate
+    if (elapsed >= this.frameInterval) {
+      this.lastFrameTime = now - (elapsed % this.frameInterval)
+      this.renderFrame()
+    }
+
     this.animationId = requestAnimationFrame(this.render)
   }
 
@@ -344,6 +393,11 @@ export class GradientRenderer {
     this.isDestroyed = true
     cancelAnimationFrame(this.animationId)
     window.removeEventListener('resize', this.handleResize)
+
+    if (this.observer) {
+      this.observer.disconnect()
+      this.observer = null
+    }
 
     if (this.gl) {
       for (const program of this.programs) {
