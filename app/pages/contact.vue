@@ -2,13 +2,30 @@
   <div>
     <SiteHeader />
     <main>
+
+      <!-- Hero section -->
+      <div class="c-contact-hero" data-theme-section="light" data-bg-section="light">
+        <div class="o-container o-grid">
+          <div class="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-2">
+            <div class="c-about-hero__title">
+              <h1 data-reveal class="c-contact__title">Have a project in mind? Looking for a <span class="u-decorate">booold,</span> <span class="u-decorate">thoughtful</span> website?</h1>
+            </div>
+          </div>
+        </div>
+        <div class="o-container o-grid">
+          <div class="col-span-12 md:col-span-5 md:col-start-8 lg:col-span-4 lg:col-start-8">
+            <div class="c-contact-hero__intro">
+              <p data-reveal>
+                You’re in the right place. Fill in the form and I’ll get back to you personally. Usually within a day.
+              </p>            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form section -->
       <section class="c-contact" data-theme-section="light">
         <div class="o-container o-grid">
-          <div class="c-contact__header">
-            <h1 data-reveal class="c-contact__title">Have a project in mind? Looking for a <span class="u-decorate">booold,</span> <span class="u-decorate">thoughtful</span> website?</h1>
-            <p data-reveal class="c-contact__intro">You’re in the right place. Fill in the form and I’ll get back to you personally — usually within a day.</p>
-          </div>
-
           <div v-if="submitStatus === 'success'" ref="successRef" class="c-contact__success">
             <h2 class="c-contact__success-title">Thank you for reaching out!</h2>
             <p class="c-contact__success-text">Your message has been sent. I'll get back to you soon.</p>

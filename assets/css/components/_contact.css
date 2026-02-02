@@ -1,21 +1,21 @@
-.c-contact {
-    @apply py-32 md:py-40 lg:py-48;
+/* Hero */
+.c-contact-hero {
+    @apply pt-36 md:pt-40 lg:pt-48 pb-20 md:pb-40 lg:pb-48;
 }
 
-.c-contact__header {
-    @apply col-span-full md:col-span-6 lg:col-span-5 lg:col-start-2;
-    @apply mb-12 md:mb-16;
+.c-contact-hero__title h1 {
+    @apply text-cta font-medium text-black tracking-tight leading-[125%];
 }
 
-.c-contact__title {
-    @apply font-sans tracking-tight text-cta leading-[125%];
-    @apply mb-6;
+.c-contact-hero__intro {
+    @apply mt-6 md:mt-0;
 }
 
-.c-contact__intro {
-    @apply text-base text-black;
+.c-contact-hero__intro p {
+    @apply text-base text-black tracking-tight leading-[125%];
 }
 
+/* Form */
 .c-contact__form-wrapper {
     @apply col-span-full lg:col-span-10 lg:col-start-2;
     @apply relative;

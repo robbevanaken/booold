@@ -1,6 +1,6 @@
 /* Hero */
 .c-about-hero {
-    @apply py-32 md:py-40 lg:py-48;
+    @apply pt-36 md:pt-40 lg:pt-48 pb-20 md:pb-40 lg:pb-48;
 }
 
 .c-about-hero__title h1 {
@@ -22,7 +22,7 @@
 
 /* Article */
 .c-about-article {
-    @apply py-32 md:py-40 lg:py-48;
+    @apply py-20 md:py-40 lg:py-48;
 }
 
 .c-about-article__title {
