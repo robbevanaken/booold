@@ -4,16 +4,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function initCheckSectionThemeScroll() {
-  const themeSections = document.querySelectorAll("[data-theme-section]");
+  const themeSections = document.querySelectorAll("[data-theme-section], [data-bg-section]");
 
-  themeSections.forEach(function(themeSection) {
-    const theme = themeSection.getAttribute("data-theme-section");
-    const bgTheme = themeSection.getAttribute("data-bg-section");
+  themeSections.forEach(function(section) {
+    const theme = section.getAttribute("data-theme-section");
+    const bgTheme = section.getAttribute("data-bg-section");
 
     ScrollTrigger.create({
-      trigger: themeSection,
-      start: "top top",
-      end: "bottom top",
+      trigger: section,
+      start: "top center",
+      end: "bottom center",
       onEnter: () => setTheme(theme, bgTheme),
       onEnterBack: () => setTheme(theme, bgTheme),
     });

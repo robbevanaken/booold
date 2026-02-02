@@ -1,5 +1,5 @@
 <template>
-  <div ref="wrapperRef" class="c-site-footer__wrap" data-footer-parallax>
+  <div ref="wrapperRef" class="c-site-footer__wrap" data-footer-parallax data-theme-section="dark">
     <footer class="c-site-footer" data-footer-parallax-inner>
       <div class="c-site-footer__navitation">
         <div class="o-container o-grid gap-y-10">

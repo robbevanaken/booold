@@ -2,7 +2,7 @@
   <div>
     <SiteHeader />
     <main>
-      <section class="c-contact">
+      <section class="c-contact" data-theme-section="light">
         <div class="o-container o-grid">
           <div class="c-contact__header">
             <h1 data-reveal class="c-contact__title">Have a project in mind? Looking for a <span class="u-decorate">booold,</span> <span class="u-decorate">thoughtful</span> website?</h1>
@@ -103,7 +103,6 @@
               <ButtonDefault
                 tag="button"
                 type="submit"
-                :dark="true"
                 label="Send message"
                 :disabled="isSubmitting"
               />

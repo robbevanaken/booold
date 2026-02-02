@@ -13,3 +13,11 @@
 .c-logo--inverse path {
     @apply fill-white;
 }
+
+[data-theme-nav="light"] .c-logo path {
+    @apply fill-black
+}
+
+[data-theme-nav="dark"] .c-logo path {
+    @apply fill-white
+}

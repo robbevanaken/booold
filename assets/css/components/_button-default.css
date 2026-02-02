@@ -1,9 +1,13 @@
 .c-btn {
     @apply text-base text-white;
     @apply inline-flex items-center justify-center;
-    @apply bg-white/30 rounded-full py-4 px-[1.75rem] w-fit backdrop-blur-sm;
+    @apply bg-black rounded-full py-4 px-[1.75rem] w-fit backdrop-blur-sm;
     @apply transition-all duration-300 ease-in-out;
     will-change: transform;
+}
+
+.c-btn--glassy {
+    @apply bg-white/30 text-white;
 }
 
 .c-btn path {
@@ -11,9 +15,9 @@
 }
 
 .c-btn:hover {
-    @apply text-base text-white;
-    @apply bg-black/60;
-    @apply scale-90;
+    @apply text-base text-orange;
+    @apply bg-orange/30;
+    @apply scale-95;
 }
 
 .c-btn:hover path {
@@ -39,15 +43,18 @@
     }
 }
 
-.c-btn--dark {
-    @apply text-base text-white;
-    @apply bg-black;
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-btn {
+    @apply text-white bg-white/30;
 }
 
-.c-btn--dark path {
-    @apply stroke-white;
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-btn:hover {
+    @apply text-white bg-black/30;
 }
 
-.c-btn--dark:hover {
-    @apply bg-orange;
+[data-theme-nav="dark"] .c-site-header .c-btn {
+    @apply text-white bg-white/30;
+}
+
+[data-theme-nav="dark"] .c-site-header .c-btn:hover {
+    @apply text-white bg-black/30;
 }

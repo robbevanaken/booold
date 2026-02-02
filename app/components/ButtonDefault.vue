@@ -1,7 +1,7 @@
 <template>
     <component
         :is="tag"
-        :class="dark ? 'c-btn c-btn--dark' : 'c-btn'"
+        :class="glassy ? 'c-btn c-btn--glassy' : 'c-btn'"
         :href="tag === 'a' ? url : undefined"
         :type="tag === 'button' ? type : undefined"
         :disabled="tag === 'button' ? disabled : undefined"
@@ -30,7 +30,7 @@ defineProps({
         type: String,
         default: 'button'
     },
-    dark: {
+    glassy: {
         type: Boolean,
         default: false
     },

@@ -3,7 +3,7 @@
     <SiteHeader />
     <main>
       <!-- Hero section -->
-      <div class="c-about-hero" data-theme-section="light">
+      <div class="c-about-hero" data-theme-section="light" data-bg-section="light">
         <div class="o-container o-grid">
           <div class="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-2">
             <div class="c-about-hero__title">
@@ -33,7 +33,7 @@
       </div>
 
       <!-- Article -->
-      <div class="c-about-article" data-theme-section="light">
+      <div class="c-about-article" data-theme-section="light" data-bg-nav="light">
         <div class="o-container o-grid">
           <div class="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-2">
             <div class="c-about-article__title">
