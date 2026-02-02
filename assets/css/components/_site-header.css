@@ -4,7 +4,8 @@
     @apply pointer-events-none;
 }
 
-.c-site-header a {
+.c-site-header a,
+.c-site-header button {
     @apply pointer-events-auto;
 }
 

@@ -15,6 +15,9 @@
               <li>
                 <a class="c-btn-link" href="/#work">Work</a>
               </li>
+              <li>
+                <a class="c-btn-link" href="/Contact">Contact</a>
+              </li>
             </ul>
           </div>
           <div class="col-span-12 lg:col-span-2">

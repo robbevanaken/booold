@@ -1,1 +1,77 @@
-.c-hamburger {}
+.c-hamburger {
+    @apply relative;
+    @apply inline-flex items-center justify-center;
+    @apply bg-black rounded-full w-16 h-16;
+    @apply cursor-pointer;
+    @apply transition-all duration-300 ease-in-out;
+}
+
+.c-hamburger__inner {
+    @apply relative z-10;
+    @apply flex flex-col justify-center items-center gap-2;
+    @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2;
+    @apply transition-all duration-300 ease-in-out;
+    @apply w-10;
+}
+
+.c-hamburger span {
+    @apply w-10 h-[0.0625rem] bg-white;
+    @apply rounded-full;
+    @apply transition-all duration-300 ease-in-out;
+}
+
+.c-hamburger:hover span {
+    @apply w-6;
+}
+
+.c-hamburger[aria-pressed="true"] .c-hamburger__inner {
+    @apply gap-0;
+}
+
+.c-hamburger[aria-pressed="true"] span:first-of-type {
+    @apply w-6 rotate-45;
+}
+
+.c-hamburger[aria-pressed="true"] span:last-of-type {
+    @apply w-6 -rotate-45;
+    @apply -mt-[0.0625rem];
+}
+
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-hamburger {
+    @apply bg-white/30;
+}
+
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-hamburger span {
+    @apply bg-white;
+}
+
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-hamburger:hover,
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-hamburger[aria-pressed="true"] {
+    @apply bg-black/30;
+}
+
+[data-theme-nav="light"] .c-site-header .c-hamburger {
+    @apply bg-black;
+}
+
+[data-theme-nav="light"] .c-site-header .c-hamburger:hover, 
+[data-theme-nav="light"] .c-site-header .c-hamburger[aria-pressed="true"] {
+    @apply bg-black/60;
+}
+
+[data-theme-nav="light"] .c-site-header .c-hamburger span {
+    @apply bg-white;
+}
+
+[data-theme-nav="dark"] .c-site-header .c-hamburger {
+    @apply bg-white;
+}
+
+[data-theme-nav="dark"] .c-site-header .c-hamburger span {
+    @apply bg-black;
+}
+
+[data-theme-nav="dark"] .c-site-header .c-hamburger:hover,
+[data-theme-nav="dark"] .c-site-header .c-hamburger[aria-pressed="true"] {
+    @apply bg-white/60;
+}
