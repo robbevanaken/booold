@@ -116,12 +116,12 @@
                 ></textarea>
                 <span v-if="errors.message" class="c-contact__error">{{ errors.message }}</span>
               </div>
-
+              <SwipeConfirm ref="swipeRef" @confirmed="isHumanConfirmed = true" />
               <ButtonDefault
                 tag="button"
                 type="submit"
                 label="Send message"
-                :disabled="isSubmitting"
+                :disabled="isSubmitting || !isHumanConfirmed"
               />
 
               <p v-if="submitStatus === 'error'" class="c-contact__status c-contact__status--error">
@@ -162,6 +162,8 @@ const errors = reactive({
 const isSubmitting = ref(false)
 const submitStatus = ref(null)
 const successRef = ref(null)
+const swipeRef = ref(null)
+const isHumanConfirmed = ref(false)
 
 const validateEmail = (email) => {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -214,25 +216,20 @@ const handleSubmit = async () => {
   submitStatus.value = null
 
   try {
-    const response = await fetch('https://formspree.io/f/xdazqnzq', {
+    await $fetch('/api/contact', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify(form)
+      body: form
     })
 
-    if (response.ok) {
-      submitStatus.value = 'success'
-      // Reset form
-      Object.keys(form).forEach(key => form[key] = '')
-      // Scroll to success message
-      await nextTick()
-      successRef.value?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-    } else {
-      submitStatus.value = 'error'
-    }
+    submitStatus.value = 'success'
+    // Reset form
+    Object.keys(form).forEach(key => form[key] = '')
+    // Reset swipe confirm
+    isHumanConfirmed.value = false
+    swipeRef.value?.reset()
+    // Scroll to success message
+    await nextTick()
+    successRef.value?.scrollIntoView({ behavior: 'smooth', block: 'center' })
   } catch (error) {
     submitStatus.value = 'error'
   } finally {

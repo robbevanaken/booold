@@ -1,10 +1,10 @@
 /* Hero */
 .c-legal-hero {
-    @apply pt-36 md:pt-40 lg:pt-48 pb-20 md:pb-40 lg:pb-48;
+    @apply pt-36 md:pt-40 lg:pt-48 pb-20 md:pb-28 lg:pb-32;
 }
 
 .c-legal-hero__title h1 {
-    @apply text-cta font-medium text-black tracking-tight leading-[125%];
+    @apply text-xxxl font-dark-paradise font-medium text-black tracking-tight leading-[125%];
 }
 
 .c-legal-hero__intro {
@@ -13,4 +13,34 @@
 
 .c-legal-hero__intro p {
     @apply text-base text-black tracking-tight leading-[125%];
+}
+
+/* Content */
+.c-legal-content {
+    @apply pb-24 md:pb-32 lg:pb-40;
+}
+
+.c-legal-content__body {
+    @apply space-y-12 md:space-y-16;
+}
+
+.c-legal-content__section h2 {
+    @apply text-xl md:text-2xl font-medium text-black tracking-tight mb-4;
+}
+
+.c-legal-content__section p {
+    @apply text-base text-black/70 tracking-tight leading-[160%];
+}
+
+.c-legal-content__section p + p {
+    @apply mt-4;
+}
+
+.c-legal-content__section ul {
+    @apply mt-4 ml-6 space-y-2;
+    list-style-type: disc;
+}
+
+.c-legal-content__section li {
+    @apply text-base text-black/70 tracking-tight leading-[160%];
 }

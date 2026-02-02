@@ -1,0 +1,58 @@
+.c-swipe-confirm {
+  @apply w-full max-w-[18rem] select-none;
+}
+
+.c-swipe-confirm__track {
+  @apply relative h-14 rounded-full;
+  @apply bg-black/10;
+  @apply flex items-center;
+  @apply overflow-hidden;
+}
+
+.c-swipe-confirm__thumb {
+  @apply absolute left-1 top-1 bottom-1;
+  @apply w-12 h-12 rounded-full;
+  @apply bg-black text-white;
+  @apply flex items-center justify-center;
+  @apply cursor-grab active:cursor-grabbing;
+  @apply transition-opacity duration-300 ease-out;
+  @apply z-10;
+}
+
+.c-swipe-confirm__thumb:hover {
+  @apply opacity-60;
+}
+
+.c-swipe-confirm__thumb svg {
+  @apply w-5 h-5;
+  @apply transition-opacity duration-300 ease-out;
+}
+
+.c-swipe-confirm__label {
+  @apply absolute inset-0;
+  @apply flex items-center justify-center;
+  @apply text-sm text-black/50 font-medium;
+  @apply pointer-events-none;
+  @apply transition-opacity duration-300;
+}
+
+.c-swipe-confirm.is-confirmed .c-swipe-confirm__track {
+  @apply bg-green;
+}
+
+.c-swipe-confirm.is-confirmed .c-swipe-confirm__thumb {
+  @apply opacity-0;
+  @apply bg-green;
+}
+
+.c-swipe-confirm.is-confirmed .c-swipe-confirm__thumb svg {
+  @apply opacity-0;
+}
+
+.c-swipe-confirm.is-confirmed .c-swipe-confirm__thumb path {
+  @apply stroke-black;
+}
+
+.c-swipe-confirm.is-confirmed .c-swipe-confirm__label {
+  @apply text-black;
+}
