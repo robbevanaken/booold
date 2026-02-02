@@ -12,6 +12,9 @@
               <li>
                 <a class="c-btn-link" href="/about">About</a>
               </li>
+              <li>
+                <a class="c-btn-link" href="/#work">Work</a>
+              </li>
             </ul>
           </div>
           <div class="col-span-12 lg:col-span-2">
