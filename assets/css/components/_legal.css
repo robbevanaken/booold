@@ -1,0 +1,16 @@
+/* Hero */
+.c-legal-hero {
+    @apply pt-36 md:pt-40 lg:pt-48 pb-20 md:pb-40 lg:pb-48;
+}
+
+.c-legal-hero__title h1 {
+    @apply text-cta font-medium text-black tracking-tight leading-[125%];
+}
+
+.c-legal-hero__intro {
+    @apply mt-6 md:mt-0;
+}
+
+.c-legal-hero__intro p {
+    @apply text-base text-black tracking-tight leading-[125%];
+}

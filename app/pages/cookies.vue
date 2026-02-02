@@ -7,7 +7,7 @@
         <div class="o-container o-grid">
           <div class="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-2">
             <div class="c-legal-hero__title">
-              <h1 data-reveal class="c-contact__title">Privacy policy</h1>
+              <h1 data-reveal class="c-contact__title">This website does not use cookies.</h1>
             </div>
           </div>
         </div>

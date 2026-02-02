@@ -10,6 +10,9 @@
             <h3 class="c-site-footer__subtitle">Navigation</h3>
             <ul class="c-site-footer__list">
               <li>
+                <a class="c-btn-link" href="/">Home</a>
+              </li>
+              <li>
                 <a class="c-btn-link" href="/about">About</a>
               </li>
               <li>
@@ -58,6 +61,18 @@
               <IconLogoStudio />
             </div>
             <div class="c-site-footer__doormat-navigation"></div>
+          </div>
+        </div>
+        <div class="o-container o-grid">
+          <div class="col-span-12">
+            <div class="c-site-footer__doormat-navigation">
+              <ul>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
+                <li><IconStar /></li>
+                <li><a href="Cookies">Cookies</a></li>
+              </ul>
+              <span>© 2025 Booold Studio</span>
+            </div>
           </div>
         </div>
       </div>
