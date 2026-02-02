@@ -12,7 +12,7 @@
 
 .c-btn:hover {
     @apply text-base text-white;
-    @apply bg-black;
+    @apply bg-black/60;
     @apply scale-90;
 }
 

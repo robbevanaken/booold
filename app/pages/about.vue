@@ -44,7 +44,7 @@
           <div class="col-span-12 md:col-span-5 md:col-start-8 lg:col-span-4 lg:col-start-8">
             <div>
               <p data-reveal>
-                My name is Robbe. Booold Studio focuses on design-driven websites and digital products that balance clarity, performance, and character. The goal is always the same: creating digital experiences that support brands, communicate clearly, and deliver measurable results.
+                My name is Robbe. I focus on design-driven websites and digital products that balance clarity, performance, and character. The goal is always the same: creating digital experiences that support brands, communicate clearly, and deliver measurable results.
                 <br><br>
                 The technical stack is chosen with longevity and maintainability in mind. Craft CMS is my CMS of choice, paired with modern front-end tools like Nuxt and Vue. This setup allows for flexible content management, strong performance, and custom solutions tailored to each project.
               </p>

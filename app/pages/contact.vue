@@ -5,7 +5,7 @@
       <section class="c-contact">
         <div class="o-container o-grid">
           <div class="c-contact__header">
-            <h1 data-reveal class="c-contact__title">Have a project in mind? Looking for a <span class="u-decorate">booold</span>, <span class="u-decorate">thoughtful</span> website?</h1>
+            <h1 data-reveal class="c-contact__title">Have a project in mind? Looking for a <span class="u-decorate">booold,</span> <span class="u-decorate">thoughtful</span> website?</h1>
             <p data-reveal class="c-contact__intro">You’re in the right place. Fill in the form and I’ll get back to you personally — usually within a day.</p>
           </div>
 

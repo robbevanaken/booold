@@ -1,5 +1,5 @@
 .c-about-home {
-    @apply pt-[6.5rem] md:pt-[11rem] pb-[4.275rem];
+    @apply pt-[6.5rem] md:pt-[11rem];
     @apply overflow-hidden;
 }
 

@@ -1,5 +1,8 @@
 <template>
   <div class="c-numbers" data-theme-section="light">
+    <div class="o-container">
+      <h2 data-reveal class="c-numbers__title">Under my belt I have:</h2>
+    </div>
     <div class="o-container o-grid">
       <div class="col-span-6 md:col-span-3">
         <div class="c-numbers__number">

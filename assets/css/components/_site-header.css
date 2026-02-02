@@ -17,3 +17,34 @@
     @apply opacity-100;
     @apply translate-y-0;
 }
+
+/* Theme styling */
+/* Theme dark + Inverse header */
+[data-theme-nav="dark"] .c-site-header--inverse .c-btn-link {
+    @apply text-white;
+}
+
+
+/* Theme light + Header */
+[data-theme-nav="light"] .c-site-header .c-btn-link {
+    @apply text-black;
+}
+
+/* Theme light + Inverse header */
+[data-theme-nav="light"] .c-site-header--inverse .c-btn-link {
+    @apply text-white;
+}
+
+[data-theme-nav="light"] .c-site-header--inverse.active .c-btn-link {
+    @apply text-black;
+}
+
+/* Theme dark + Logo */
+[data-theme-nav="dark"] .c-logo path {
+    @apply fill-white;
+}
+
+/* Theme light + Logo */
+[data-theme-nav="light"] .c-logo path {
+    @apply fill-black;
+}
