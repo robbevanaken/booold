@@ -21,3 +21,7 @@
 [data-theme-nav="dark"] .c-logo path {
     @apply fill-white
 }
+
+.c-site-header:has(.c-hamburger[data-navigation-status="active"]) .c-logo {
+    @apply opacity-0;
+}

@@ -23,7 +23,7 @@
                 <div class="col-span-12 md:col-span-5 lg:col-span-3 md:col-start-7 lg:col-start-9">
                     <div class="c-about-home__content-text">
                         <p data-reveal>
-                            I combine strategic thinking with creative passion to craft digital experiences that truly connect. Together with my clients, I aim for a web presence that drives the brand forward and achieves real results. Whether that’s converting leads, selling products, or simply showing off your work
+                            I combine strategic thinking with creative passion to craft websites and digital products that do what they need to do, and look really good while doing it. Together with my clients, I aim for a web presence that drives the brand forward and achieves real results. Whether that’s converting leads, selling products, or simply showing off your work
                         </p>
                         <ButtonArrow link="about" label="Get to know me" />
                     </div>

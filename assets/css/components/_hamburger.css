@@ -14,26 +14,30 @@
     @apply w-10;
 }
 
-.c-hamburger span {
+.c-hamburger__bar {
     @apply w-10 h-[0.0625rem] bg-white;
     @apply rounded-full;
     @apply transition-all duration-300 ease-in-out;
 }
 
-.c-hamburger:hover span {
+.c-hamburger:hover .c-hamburger__bar {
     @apply w-6;
 }
 
-.c-hamburger[aria-pressed="true"] .c-hamburger__inner {
+.c-hamburger[data-navigation-status="active"] {
+    @apply !bg-white;
+}
+
+.c-hamburger[data-navigation-status="active"] .c-hamburger__inner {
     @apply gap-0;
 }
 
-.c-hamburger[aria-pressed="true"] span:first-of-type {
-    @apply w-6 rotate-45;
+.c-hamburger[data-navigation-status="active"] .c-hamburger__bar:first-child {
+    @apply w-6 rotate-45 !bg-black;
 }
 
-.c-hamburger[aria-pressed="true"] span:last-of-type {
-    @apply w-6 -rotate-45;
+.c-hamburger[data-navigation-status="active"] .c-hamburger__bar:last-child {
+    @apply w-6 -rotate-45 !bg-black;
     @apply -mt-[0.0625rem];
 }
 
@@ -41,12 +45,12 @@
     @apply bg-white/30;
 }
 
-[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-hamburger span {
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-hamburger .c-hamburger__bar {
     @apply bg-white;
 }
 
 [data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-hamburger:hover,
-[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-hamburger[aria-pressed="true"] {
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-hamburger[data-navigation-status="active"] {
     @apply bg-black/30;
 }
 
@@ -54,12 +58,12 @@
     @apply bg-black;
 }
 
-[data-theme-nav="light"] .c-site-header .c-hamburger:hover, 
-[data-theme-nav="light"] .c-site-header .c-hamburger[aria-pressed="true"] {
+[data-theme-nav="light"] .c-site-header .c-hamburger:hover,
+[data-theme-nav="light"] .c-site-header .c-hamburger[data-navigation-status="active"] {
     @apply bg-black/60;
 }
 
-[data-theme-nav="light"] .c-site-header .c-hamburger span {
+[data-theme-nav="light"] .c-site-header .c-hamburger .c-hamburger__bar {
     @apply bg-white;
 }
 
@@ -67,11 +71,11 @@
     @apply bg-white;
 }
 
-[data-theme-nav="dark"] .c-site-header .c-hamburger span {
+[data-theme-nav="dark"] .c-site-header .c-hamburger .c-hamburger__bar {
     @apply bg-black;
 }
 
 [data-theme-nav="dark"] .c-site-header .c-hamburger:hover,
-[data-theme-nav="dark"] .c-site-header .c-hamburger[aria-pressed="true"] {
+[data-theme-nav="dark"] .c-site-header .c-hamburger[data-navigation-status="active"] {
     @apply bg-white/60;
 }

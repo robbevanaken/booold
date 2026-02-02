@@ -1,7 +1,6 @@
 .c-site-header {
     @apply fixed top-0 left-0 w-full z-50;
     @apply py-6 md:py-6;
-    @apply pointer-events-none;
 }
 
 .c-site-header a,

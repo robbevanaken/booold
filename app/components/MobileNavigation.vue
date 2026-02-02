@@ -2,36 +2,19 @@
     <div class="c-header__mobile">
         <button
             class="c-hamburger"
-            :aria-pressed="isOpen"
-            @click="toggleMenu"
+            :data-navigation-status="isOpen ? 'active' : 'not-active'"
+            @click="toggle"
         >
             <div class="c-hamburger__inner">
-                <span></span>
-                <span></span>
+                <span class="c-hamburger__bar"></span>
+                <span class="c-hamburger__bar"></span>
             </div>
         </button>
-        <aside class="c-mobile-panel" :aria-hidden="!isOpen">
-            <ul class="c-mobile-panel__list">
-                <li class="c-mobile-panel__item">
-                    <a class="c-mobile-panel__link" href="/about">About</a>
-                </li>
-                <li class="c-mobile-panel__item">
-                    <a class="c-mobile-panel__link" href="/#work">Work</a>
-                </li>
-                <li class="c-mobile-panel__item">
-                    <a class="c-mobile-panel__link" href="/contact">Contact</a>
-                </li>
-            </ul>
-        </aside>
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { useMobileMenu } from '~/composables/useMobileMenu'
 
-const isOpen = ref(false)
-
-const toggleMenu = () => {
-    isOpen.value = !isOpen.value
-}
+const { isOpen, toggle } = useMobileMenu()
 </script>
