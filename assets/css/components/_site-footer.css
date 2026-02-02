@@ -49,7 +49,7 @@
 }
 
 .c-site-footer__doormat-navigation ul {
-    @apply flex items-center gap-5;
+    @apply flex items-center gap-2 md:gap-5;
 }
 
 .c-site-footer__doormat-navigation svg {
