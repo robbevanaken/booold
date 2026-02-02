@@ -1,7 +1,7 @@
 <template>
   <div class="c-logo" :class="{'c-logo--inverse': inverse}">
     <NuxtLink to="/">
-      <svg width="340" height="51" viewBox="0 0 340 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg ref="svgRef" style="overflow: visible;" width="340" height="51" viewBox="0 0 340 51" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M309.166 0.487228C327.611 0.487228 340 10.1621 340 24.9877C340 33.4793 335.893 40.3004 328.446 44.4766C323.226 47.2608 316.474 48.8617 308.122 48.8617L284.972 48.9169C281.653 48.9248 278.958 46.2362 278.958 42.9169V6.54303C278.958 3.23472 281.636 0.550661 284.944 0.543038L309.166 0.487228ZM300.674 29.6511C300.674 32.2651 302.793 34.3841 305.407 34.3841C313.62 34.3841 317.866 30.9736 317.866 24.8484C317.866 18.7929 313.411 14.8951 305.546 14.8951C302.855 14.8951 300.674 17.0765 300.674 19.7674V29.6511Z" fill="black"/>
         <path d="M255.892 27.0617C255.892 30.3754 258.579 33.0617 261.892 33.0617H277.177C280.491 33.0617 283.177 35.748 283.177 39.0617V42.9313C283.177 46.245 280.491 48.9313 277.177 48.9313H240.176C236.862 48.9313 234.176 46.245 234.176 42.9313V6.55684C234.176 3.24313 236.862 0.556831 240.176 0.556831H249.892C253.206 0.556831 255.892 3.24312 255.892 6.55683V27.0617Z" fill="black"/>
         <path d="M205.076 0C225.261 0 238.068 10.7189 238.068 25.1965C238.068 39.674 225.191 50.3929 205.076 50.3929C184.96 50.3929 172.223 39.674 172.223 25.1965C172.223 10.7189 184.96 0 205.076 0ZM205.076 36.681C210.714 36.681 214.263 31.8088 214.263 25.1965C214.263 18.5841 210.644 13.7119 205.076 13.7119C199.508 13.7119 195.958 18.5841 195.958 25.1965C195.958 31.8088 199.508 36.681 205.076 36.681Z" fill="black"/>
@@ -13,14 +13,57 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'CompanyLogo',
-  props: {
-    inverse: {
-      type: Boolean,
-      default: false
-    }
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+import gsap from 'gsap'
+
+defineProps({
+  inverse: {
+    type: Boolean,
+    default: false
   }
+})
+
+const svgRef = ref(null)
+let observer = null
+
+const animateLogo = () => {
+  if (!svgRef.value) return
+
+  const paths = Array.from(svgRef.value.querySelectorAll('path')).reverse()
+
+  gsap.fromTo(paths,
+    { opacity: 0, y: 15 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 0.5,
+      stagger: 0.06,
+      ease: 'back.out(1.7)'
+    }
+  )
 }
+
+onMounted(() => {
+  const header = document.querySelector('.c-site-header')
+  if (!header) return
+
+  observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.attributeName === 'class') {
+        if (header.classList.contains('active')) {
+          animateLogo()
+        }
+      }
+    })
+  })
+
+  observer.observe(header, { attributes: true })
+})
+
+onUnmounted(() => {
+  if (observer) {
+    observer.disconnect()
+  }
+})
 </script>

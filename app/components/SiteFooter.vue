@@ -50,7 +50,7 @@
       <div class="c-site-footer__doormat">
         <div class="o-container o-grid">
           <div class="col-span-12">
-            <div class="c-site-footer__doormat-logo">
+            <div class="c-site-footer__doormat-logo" ref="doormatLogoRef">
               <IconLogo />
               <IconLogoStudio />
             </div>
@@ -70,6 +70,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const wrapperRef = ref(null)
+const doormatLogoRef = ref(null)
 let ctx = null
 
 onMounted(() => {
@@ -92,6 +93,37 @@ onMounted(() => {
           start: 'top bottom',
           end: 'top top',
           scrub: true
+        }
+      })
+    }
+
+    if (doormatLogoRef.value) {
+      const svgs = doormatLogoRef.value.querySelectorAll('svg')
+
+      svgs.forEach(svg => {
+        svg.style.overflow = 'visible'
+      })
+
+      ScrollTrigger.create({
+        trigger: doormatLogoRef.value,
+        start: 'top 90%',
+        once: true,
+        onEnter: () => {
+          svgs.forEach((svg, index) => {
+            const pathsArray = Array.from(svg.querySelectorAll('path'))
+            const paths = index === 0 ? pathsArray.reverse() : pathsArray
+            gsap.fromTo(paths,
+              { opacity: 0, y: 15 },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                stagger: 0.05,
+                delay: 0,
+                ease: 'back.out(1.7)'
+              }
+            )
+          })
         }
       })
     }
