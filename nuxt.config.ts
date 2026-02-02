@@ -13,6 +13,11 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
 
+  ssr: true,
+  nitro: {
+    preset: 'static'
+  },
+  
   vite: {
     optimizeDeps: {
       include: ['gsap', 'gsap/ScrambleTextPlugin', 'gsap/SplitText']
