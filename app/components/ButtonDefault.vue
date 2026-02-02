@@ -7,7 +7,7 @@
         :disabled="tag === 'button' ? disabled : undefined"
     >
         <span class="c-btn__inner">
-            {{ label }}
+            <span class="c-btn__text">{{ label }}</span>
         </span>
     </component>
 </template>

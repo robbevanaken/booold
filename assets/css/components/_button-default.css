@@ -1,7 +1,7 @@
 .c-btn {
     @apply text-base text-white;
-    @apply inline-flex items-center;
-    @apply bg-white/30 rounded-full py-4 px-[1.75rem] w-fit backdrop-blur-sm;;
+    @apply inline-flex items-center justify-center;
+    @apply bg-white/30 rounded-full py-4 px-[1.75rem] w-fit backdrop-blur-sm;
     @apply transition-all duration-300 ease-in-out;
     will-change: transform;
 }
@@ -22,7 +22,21 @@
 
 .c-btn__inner {
     @apply flex items-center gap-2;
+    @apply overflow-hidden;
     will-change: transform;
+}
+
+.c-btn__text {
+    --text-duplicate-distance: 1.5em;
+    display: block;
+    text-shadow: 0px var(--text-duplicate-distance) currentColor;
+    transition: transform 0.525s cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+@media (hover:hover) and (pointer:fine) {
+    .c-btn:hover .c-btn__text {
+        transform: translateY(calc(-1 * var(--text-duplicate-distance)));
+    }
 }
 
 .c-btn--dark {
