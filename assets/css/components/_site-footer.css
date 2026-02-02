@@ -17,11 +17,15 @@
 }
 
 .c-site-footer__doormat-logo {
-    @apply w-full;
+    @apply w-full flex justify-between gap-2 md:gap-5;
 }
 
 .c-site-footer__doormat-logo svg {
     @apply w-full h-auto;
+}
+
+.c-site-footer__doormat-logo path {
+    @apply fill-white;
 }
 
 .c-site-footer__list {

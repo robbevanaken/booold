@@ -10,9 +10,13 @@
     @apply flex flex-col justify-end h-full;
 }
 
-.c-hero-home__logo  svg {
+.c-hero-home__logo svg {
     @apply w-full h-auto;
     @apply py-6 md:py-10;
+}
+
+.c-hero-home__logo path {
+    @apply fill-white;
 }
 
 .c-hero-home__logo-text {

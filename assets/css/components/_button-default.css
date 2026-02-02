@@ -56,5 +56,5 @@
 }
 
 [data-theme-nav="dark"] .c-site-header .c-btn:hover {
-    @apply text-white bg-black/30;
+    @apply text-orange bg-orange/30;
 }

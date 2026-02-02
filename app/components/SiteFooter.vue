@@ -51,6 +51,7 @@
         <div class="o-container o-grid">
           <div class="col-span-12">
             <div class="c-site-footer__doormat-logo">
+              <IconLogo />
               <IconLogoStudio />
             </div>
             <div class="c-site-footer__doormat-navigation"></div>
