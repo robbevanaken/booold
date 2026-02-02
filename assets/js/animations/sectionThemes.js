@@ -12,8 +12,8 @@ function initCheckSectionThemeScroll() {
 
     ScrollTrigger.create({
       trigger: section,
-      start: "top center",
-      end: "bottom center",
+      start: "top 10%",
+      end: "bottom 10%",
       onEnter: () => setTheme(theme, bgTheme),
       onEnterBack: () => setTheme(theme, bgTheme),
     });
