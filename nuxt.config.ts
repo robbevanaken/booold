@@ -14,9 +14,6 @@ export default defineNuxtConfig({
   ],
 
   ssr: true,
-  nitro: {
-    preset: 'static'
-  },
   
   vite: {
     optimizeDeps: {
@@ -25,7 +22,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
+    pageTransition: { name: 'modern', mode: 'out-in' },
     head: {
       link: [
         {

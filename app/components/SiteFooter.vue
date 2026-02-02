@@ -78,47 +78,4 @@
       </div>
     </footer>
   </div>
-</template>
-
-<script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-gsap.registerPlugin(ScrollTrigger)
-
-const wrapperRef = ref(null)
-let ctx = null
-
-onMounted(() => {
-  const el = wrapperRef.value
-  if (!el) return
-
-  const isMobile = window.innerWidth <= 991
-  const blurAmount = isMobile ? 2.5 : 2.5
-
-  ctx = gsap.context(() => {
-    const inner = el.querySelector('[data-footer-parallax-inner]')
-
-    if (inner) {
-      gsap.from(inner, {
-        yPercent: -10,
-        filter: `blur(${blurAmount}px)`,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: el,
-          start: 'top bottom',
-          end: 'top top',
-          scrub: true
-        }
-      })
-    }
-  }, el)
-})
-
-onUnmounted(() => {
-  if (ctx) {
-    ctx.revert()
-  }
-})
-</script>
+</template>x

@@ -1,7 +1,7 @@
 .c-hamburger {
     @apply relative;
     @apply inline-flex items-center justify-center;
-    @apply bg-black rounded-full w-16 h-16;
+    @apply bg-black/60 backdrop-blur-sm rounded-full w-16 h-16;
     @apply cursor-pointer;
     @apply transition-all duration-300 ease-in-out;
 }
@@ -55,7 +55,7 @@
 }
 
 [data-theme-nav="light"] .c-site-header .c-hamburger {
-    @apply bg-black;
+    @apply bg-black/60;
 }
 
 [data-theme-nav="light"] .c-site-header .c-hamburger:hover,
@@ -68,7 +68,7 @@
 }
 
 [data-theme-nav="dark"] .c-site-header .c-hamburger {
-    @apply bg-white;
+    @apply bg-white/60;
 }
 
 [data-theme-nav="dark"] .c-site-header .c-hamburger .c-hamburger__bar {
