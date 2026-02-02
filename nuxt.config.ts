@@ -26,6 +26,17 @@ export default defineNuxtConfig({
 
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      link: [
+        {
+          rel: 'preload',
+          href: '/fonts/DarkParadise-Italic.woff2',
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: ''
+        }
+      ]
+    }
 //     head: {
 //       script: [
 //         {
