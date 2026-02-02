@@ -1,5 +1,6 @@
 <template>
   <div data-theme-nav="light" data-bg-nav="light">
+    <ClientOnly><LoadingScreen /></ClientOnly>
     <NuxtPage @page:finish="onPageFinish" />
     <MobilePanel />
     <ClientOnly><CursorCase /></ClientOnly>

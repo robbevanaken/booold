@@ -1,0 +1,69 @@
+.c-loader {
+    @apply z-[100];
+    @apply text-white;
+    @apply w-full h-dvh;
+    @apply fixed;
+    @apply inset-x-0 top-0;
+    display: none;
+}
+
+.c-loader__bg {
+    @apply w-full h-full;
+    @apply absolute;
+    @apply inset-0;
+    @apply bg-black;
+}
+
+.c-loader__container {
+    @apply z-[2];
+    @apply flex flex-col gap-18 md:gap-24;
+    @apply justify-center items-center;
+    @apply w-full h-full;
+    @apply relative;
+}
+
+.c-loader__bg-bar-wrapper {
+    @apply relative;
+    @apply w-[10rem] md:w-[16rem] h-[0.0625rem];
+}
+
+.c-loader__bg-bar {
+    @apply absolute inset-0;
+    @apply inline-block z-[2];
+    @apply origin-left;
+    @apply bg-white;
+    @apply w-full h-full;
+    transform-style: preserve-3d;
+    transform: scale3d(0, 1, 1);
+}
+
+.c-loader__bg-bar-backdrop {
+    @apply absolute inset-0;
+    @apply bg-white/30;
+}
+
+.c-loader__logo-wrap {
+    @apply flex;
+    @apply justify-center items-center;
+    @apply w-[10rem] lg:w-[12rem] h-auto;
+    @apply relative;
+}
+
+.c-loader__logo-item {
+    @apply w-full;
+    @apply absolute;
+}
+
+.c-loader__logo-item.is--base {
+    @apply opacity-20;
+}
+
+.c-loader__logo-item.is--top {
+    -webkit-clip-path: inset(0% 100% 0% 0%);
+    clip-path: inset(0% 100% 0% 0%);
+}
+
+.c-loader__logo-img {
+    @apply w-full;
+    @apply block;
+}
