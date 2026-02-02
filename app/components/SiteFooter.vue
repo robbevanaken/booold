@@ -10,16 +10,16 @@
             <h3 class="c-site-footer__subtitle">Navigation</h3>
             <ul class="c-site-footer__list">
               <li>
-                <a class="c-btn-link" href="/">Home</a>
+                <NuxtLink class="c-btn-link" to="/">Home</NuxtLink>
               </li>
               <li>
-                <a class="c-btn-link" href="/about">About</a>
+                <NuxtLink class="c-btn-link" to="/about">About</NuxtLink>
               </li>
               <li>
-                <a class="c-btn-link" href="/#work">Work</a>
+                <NuxtLink class="c-btn-link" to="/#work">Work</NuxtLink>
               </li>
               <li>
-                <a class="c-btn-link" href="/Contact">Contact</a>
+                <NuxtLink class="c-btn-link" to="/Contact">Contact</NuxtLink>
               </li>
             </ul>
           </div>
@@ -27,16 +27,16 @@
             <h3 class="c-site-footer__subtitle">Socials</h3>
             <ul class="c-site-footer__list">
               <li>
-                <a class="c-btn-link" href="https://www.instagram.com/boooldstudio/" target="_blank">Instagram</a>
+                <NuxtLink class="c-btn-link" to="https://www.instagram.com/boooldstudio/" target="_blank">Instagram</NuxtLink>
               </li>
               <li>
-                <a class="c-btn-link" href="https://www.linkedin.com/company/booold" target="_blank">Linkedin</a>
+                <NuxtLink class="c-btn-link" to="https://www.linkedin.com/company/booold" target="_blank">Linkedin</NuxtLink>
               </li>
               <li>
-                <a class="c-btn-link" href="tel:+32494487762">Whatsapp</a>
+                <NuxtLink class="c-btn-link" to="tel:+32494487762">Whatsapp</NuxtLink>
               </li>
               <li>
-                <a class="c-btn-link" target="_blank" href="https://open.spotify.com/playlist/1EKZ2Fjg5p9sRzu2Su7CnQ?si=e3329365c9cb478c">Spotify</a>
+                <NuxtLink class="c-btn-link" target="_blank" to="https://open.spotify.com/playlist/1EKZ2Fjg5p9sRzu2Su7CnQ?si=e3329365c9cb478c">Spotify</NuxtLink>
               </li>
             </ul>
           </div>
@@ -44,10 +44,10 @@
             <h3 class="c-site-footer__subtitle">Contact me</h3>
             <ul class="c-site-footer__list">
               <li>
-                <a class="c-btn-link" href="mailto:hello@boooldstudio.com" target="_blank">hello@boooldstudio.com</a>
+                <NuxtLink class="c-btn-link" to="mailto:hello@boooldstudio.com" target="_blank">hello@boooldstudio.com</NuxtLink>
               </li>
               <li>
-                <a class="c-btn-link" href="https://www.linkedin.com/company/booold" target="_blank">+32 494 48 77 62</a>
+                <NuxtLink class="c-btn-link" to="https://www.linkedin.com/company/booold" target="_blank">+32 494 48 77 62</NuxtLink>
               </li>
             </ul>
           </div>
@@ -67,9 +67,9 @@
           <div class="col-span-12">
             <div class="c-site-footer__doormat-navigation">
               <ul>
-                <li><a href="privacy-policy">Privacy Policy</a></li>
+                <li><NuxtLink to="privacy-policy">Privacy Policy</NuxtLink></li>
                 <li><IconStar /></li>
-                <li><a href="Cookies">Cookies</a></li>
+                <li><NuxtLink to="Cookies">Cookies</NuxtLink></li>
               </ul>
               <span>© 2025 Booold Studio</span>
             </div>

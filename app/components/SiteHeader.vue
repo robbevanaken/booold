@@ -5,7 +5,7 @@
         <CompanyLogo :inverse="inverse" />
         <div class="c-navigation-primary__wrapper">
           <PrimaryNavigation :inverse="inverse" />
-          <ButtonDefault url="/contact" label="Get in contact" />
+          <ButtonDefault url="/contact" label="Get in contact" type="NuxtLink" />
         </div>
         <MobileNavigation />
       </div>

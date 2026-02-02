@@ -1,8 +1,8 @@
 <template>
-    <a class="c-btn-arrow" :href="link">
-        {{ label }}
-        <IconArrow />
-    </a>
+    <NuxtLink class="c-btn-arrow" :to="link">
+      {{ label }}
+      <IconArrow />
+    </NuxtLink>
 </template>
 
 <script>

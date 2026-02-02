@@ -117,7 +117,7 @@
                 <span v-if="errors.message" class="c-contact__error">{{ errors.message }}</span>
               </div>
               <SwipeConfirm ref="swipeRef" @confirmed="isHumanConfirmed = true" />
-              <ButtonDefault
+              <ButtonDefaultBtn
                 tag="button"
                 type="submit"
                 label="Send message"
