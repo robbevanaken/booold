@@ -7,6 +7,7 @@
           <PrimaryNavigation :inverse="inverse" />
           <ButtonDefault url="/contact" label="Get in contact" />
         </div>
+        <MobileNavigation />
       </div>
     </div>
   </header>

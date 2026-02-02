@@ -1,5 +1,5 @@
 .c-navigation-primary__wrapper {
-    @apply flex items-center gap-12;
+    @apply items-center gap-12 hidden md:flex;
 }
 
 .c-navigation-primary--inverse {

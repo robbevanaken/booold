@@ -22,3 +22,7 @@
     @apply opacity-100;
     @apply translate-y-0;
 }
+
+.c-header__mobile {
+    @apply block md:hidden;
+}
