@@ -10,7 +10,19 @@
                 <span></span>
             </div>
         </button>
-        <aside class="c-mobile-panel" :aria-hidden="!isOpen"></aside>
+        <aside class="c-mobile-panel" :aria-hidden="!isOpen">
+            <ul class="c-mobile-panel__list">
+                <li class="c-mobile-panel__item">
+                    <a class="c-mobile-panel__link" href="/about">About</a>
+                </li>
+                <li class="c-mobile-panel__item">
+                    <a class="c-mobile-panel__link" href="/#work">Work</a>
+                </li>
+                <li class="c-mobile-panel__item">
+                    <a class="c-mobile-panel__link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </aside>
     </div>
 </template>
 

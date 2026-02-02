@@ -1,1 +1,24 @@
-.c-mobile-panel {}
+.c-mobile-panel {
+    @apply fixed inset-0 bg-black z-[49];
+    @apply transition-all duration-700 ease-in-out;
+    @apply flex items-center justify-center;
+}
+
+.c-mobile-panel[aria-hidden="true"] {
+    @apply translate-x-full;
+}
+
+.c-mobile-panel[aria-hidden="false"] {
+    @apply translate-x-0;
+}
+
+.c-mobile-panel__list {
+    @apply flex flex-col justify-center items-center;
+    @apply gap-4;
+}
+
+.c-mobile-panel__item {}
+
+.c-mobile-panel__link {
+    @apply font-sans text-xxl text-white; 
+}

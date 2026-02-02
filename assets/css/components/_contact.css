@@ -23,6 +23,7 @@
 
 .c-contact__form {
     @apply flex flex-col gap-6 md:gap-9;
+    @apply pb-32 md:pb-40 lg:pb-48;
 }
 
 .c-contact__loader {
