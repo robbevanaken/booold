@@ -4,7 +4,7 @@
       <div class="c-site-footer__navitation">
         <div class="o-container o-grid gap-y-10">
           <div class="col-span-12 lg:col-span-5">
-            <h2 data-reveal class="c-site-footer__title">Booold thinking <br>brilliant outcomes</h2>
+            <h2 class="c-site-footer__title">Booold thinking <br>brilliant outcomes</h2>
           </div>
           <div class="col-span-12 lg:col-span-2">
             <h3 class="c-site-footer__subtitle">Navigation</h3>
