@@ -24,7 +24,6 @@
     @apply text-white;
 }
 
-
 /* Theme light + Header */
 [data-theme-nav="light"] .c-site-header .c-btn-link {
     @apply text-black;
@@ -37,6 +36,24 @@
 
 [data-theme-nav="light"] .c-site-header--inverse.active .c-btn-link {
     @apply text-black;
+}
+
+[data-theme-nav="light"] .c-site-header .c-btn {
+    @apply text-white bg-black/50;
+}
+
+[data-theme-nav="light"] .c-site-header .c-btn:hover,
+[data-theme-nav="light"] .c-site-header .c-btn:focus {
+    @apply text-white bg-black/85;
+}
+
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-btn {
+    @apply text-white bg-white/30;
+}
+
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-btn:hover,
+[data-theme-nav="light"] .c-site-header--inverse:not(.active) .c-btn:focus {
+    @apply bg-white/60 text-black;
 }
 
 /* Theme dark + Logo */

@@ -4,6 +4,7 @@
             class="c-cta__canvas"
             ref="unicordContainer"
             data-us-project="8vJHuObLYlYmAivRgROK" 
+            data-theme-section="dark"
         ></div>
         <div class="o-container o-grid">
             <div class="col-span-12 md:col-span">

@@ -1,5 +1,5 @@
 <template>
-    <div class="c-quote" data-theme-section="dark">
+    <div class="c-quote" data-theme-section="dark" data-bg-section="dark">
         <div class="o-container o-grid">
             <div class="col-span-12 md:col-span-10 md:col-start-2 lg:col-span-8 lg:col-start-3 xl:col-span-6 xl:col-start-4">
                 <div ref="iconRef" class="c-quote__icon">

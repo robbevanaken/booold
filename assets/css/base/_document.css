@@ -41,10 +41,10 @@ body::selection {
     @apply text-white bg-orange;
 }
 
-[data-theme-nav] {
+[data-bg-nav] {
     @apply transition-colors duration-500 ease-in-out;
 }
 
-[data-theme-nav="dark"] {
+[data-bg-nav="dark"] {
     @apply bg-black;
 }

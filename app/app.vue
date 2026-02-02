@@ -1,5 +1,5 @@
 <template>
-  <div data-theme-nav="light">
+  <div data-theme-nav="light" data-bg-nav="light">
     <NuxtPage @page:finish="onPageFinish" />
     <ClientOnly><CursorCase /></ClientOnly>
   </div>

@@ -1,5 +1,5 @@
 <template>
-    <section class="c-featured-cases" data-theme-section="dark">
+    <section class="c-featured-cases" data-theme-section="dark" data-bg-section="dark">
         <div class="o-container o-grid">
             <div class="col-span-12 md:col-span-6  lg:col-span-5 lg:col-start-2">
                 <h2 class="c-featured-cases__title">Featured Projects</h2>

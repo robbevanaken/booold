@@ -27,8 +27,9 @@ function initCheckSectionThemeScroll() {
     });
 
     document.querySelectorAll("[data-bg-nav]").forEach(function(elem) {
-      if (bgTheme && elem.getAttribute("data-bg-nav") !== bgTheme) {
-        elem.setAttribute("data-bg-nav", bgTheme);
+      const bg = bgTheme || "light";
+      if (elem.getAttribute("data-bg-nav") !== bg) {
+        elem.setAttribute("data-bg-nav", bg);
       }
     });
   }
