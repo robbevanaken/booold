@@ -12,7 +12,7 @@
                 <div class="c-cta__content">
                     <h2 data-reveal class="c-cta__title">Convinced already? Or still curious? Let’s see what we can <span class="u-decorate">build</span> together.</h2>
                     <div class="c-cta__btn">
-                        <ButtonDefault url="/contact" label="Get in contact" :glassy="true" />
+                        <ButtonDefault url="mailto:hello@boooldstudio.com" label="Get in contact" :glassy="true" />
                     </div>
                 </div>
             </div>
