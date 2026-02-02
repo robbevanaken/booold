@@ -17,5 +17,9 @@
 <script setup>
 import { usePageAnimations } from '~/composables/usePageAnimations'
 
+useHead({
+  title: 'Booold Studio | Design-driven websites'
+})
+
 usePageAnimations()
 </script>

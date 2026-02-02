@@ -40,5 +40,9 @@
 <script setup>
 import { usePageAnimations } from '~/composables/usePageAnimations'
 
+useHead({
+  title: 'Cookies | Booold Studio'
+})
+
 usePageAnimations()
 </script>

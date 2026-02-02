@@ -80,5 +80,9 @@
 <script setup>
 import { usePageAnimations } from '~/composables/usePageAnimations'
 
+useHead({
+  title: 'Privacy Policy | Booold Studio'
+})
+
 usePageAnimations()
 </script>

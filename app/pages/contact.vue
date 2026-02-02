@@ -140,6 +140,10 @@
 import { ref, reactive, nextTick } from 'vue'
 import { usePageAnimations } from '~/composables/usePageAnimations'
 
+useHead({
+  title: 'Contact | Booold Studio'
+})
+
 usePageAnimations()
 
 const form = reactive({

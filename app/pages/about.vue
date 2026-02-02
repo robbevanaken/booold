@@ -65,6 +65,10 @@ import { ref } from 'vue'
 import { useUnicornStudio } from '~/composables/useUnicornStudio'
 import { usePageAnimations } from '~/composables/usePageAnimations'
 
+useHead({
+  title: 'About | Booold Studio'
+})
+
 const unicordContainer = ref(null)
 useUnicornStudio(unicordContainer)
 usePageAnimations()
