@@ -19,7 +19,7 @@
                 <NuxtLink class="c-btn-link" to="/#work">Work</NuxtLink>
               </li>
               <li>
-                <NuxtLink class="c-btn-link" to="/Contact">Contact</NuxtLink>
+                <NuxtLink class="c-btn-link" to="mailto:hello@boooldstudio.com">Contact</NuxtLink>
               </li>
             </ul>
           </div>

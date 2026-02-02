@@ -11,7 +11,7 @@
 import { nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { initLenis } from "../../assets/js/animations/lenis.js"
+import { initLenis } from "../assets/js/animations/lenis.js"
 
 gsap.registerPlugin(ScrollTrigger)
 
