@@ -5,7 +5,7 @@
         <CompanyLogo :inverse="inverse" />
         <div class="c-navigation-primary__wrapper">
           <PrimaryNavigation :inverse="inverse" />
-          <ButtonDefault url="mailto:hello@boooldstudio.com" label="Get in contact" type="NuxtLink" />
+          <ButtonDefault url="/contact" label="Get in contact" type="NuxtLink" />
         </div>
         <MobileNavigation />
       </div>

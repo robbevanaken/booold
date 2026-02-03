@@ -18,7 +18,7 @@
                         </NuxtLink>
                     </li>
                     <li class="c-mobile-panel__item" data-navigation-item style="transition-delay: 0.1s">
-                        <NuxtLink class="c-mobile-panel__link" to="mailto:hello@boooldstudio.com" @click="close">
+                        <NuxtLink class="c-mobile-panel__link" to="/contact" @click="close">
                             <span class="c-mobile-panel__link-text">Contact</span>
                         </NuxtLink>
                     </li>
