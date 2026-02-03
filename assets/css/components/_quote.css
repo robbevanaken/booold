@@ -1,5 +1,5 @@
 .c-quote {
-    @apply py-[8rem] md:py-[16rem] lg:py-[20rem];
+    @apply py-[10rem] md:py-[16rem] lg:py-[20rem];
 }
 
 .c-quote__icon {

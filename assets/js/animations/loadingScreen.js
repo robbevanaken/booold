@@ -31,7 +31,7 @@ export function initLogoRevealloader() {
     const loadTimeline = gsap.timeline({
         defaults: {
             ease: "c-loader",
-            duration: 4
+            duration: 1.75
         }
     })
     .set(wrap, { display: "block" })
