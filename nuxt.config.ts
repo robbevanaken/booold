@@ -31,7 +31,14 @@ export default defineNuxtConfig({
           as: 'font',
           type: 'font/woff2',
           crossorigin: ''
-        }
+        },
+        {
+          rel: 'preload',
+          href: '/fonts/Inter-VariableFont.woff2',
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: ''
+        },
       ]
     }
 //     head: {
