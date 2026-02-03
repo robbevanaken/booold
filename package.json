@@ -3,8 +3,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "start": "node .output/server/index.mjs",
+    "build": "npm ci && nuxt build",
+    "serve": "node .output/server/index.mjs",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
