@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   css: ['@@/assets/css/main.css'],
 
   devServer: {
-    port: 3010,
+    port: 3000,
   },
 
   modules: [
@@ -22,6 +22,7 @@ export default defineNuxtConfig({
   },
 
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       link: [
         {
