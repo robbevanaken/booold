@@ -1,5 +1,6 @@
 <template>
     <div class="c-header__mobile">
+        <div aria-hidden="true" class="c-hamburger-ghost"></div>
         <button
             class="c-hamburger"
             :data-navigation-status="isOpen ? 'active' : 'not-active'"
