@@ -24,6 +24,12 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
+      meta: [
+        { property: 'og:image', content: '/images/other/OGIMAGE.png' },
+        { property: 'og:image:type', content: 'image/png' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:image', content: '/images/other/OGIMAGE.png' },
+      ],
       link: [
         {
           rel: 'preload',
