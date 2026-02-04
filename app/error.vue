@@ -19,8 +19,8 @@
           <div class="col-span-12 lg:col-span-8 lg:col-start-2">
             <div class="c-legal-content__body">
               <section class="c-legal-content__section" data-reveal>
-                <h2>Page not found</h2>
-                <p>The page you're looking for doesn't exist or has been moved.</p>
+                <h2 data-reveal>Page not found</h2>
+                <p data-reveal>The page you're looking for doesn't exist or has been moved.</p>
                 <div class="mt-8">
                   <button class="c-btn" @click="handleError">
                     <span class="c-btn__inner">
