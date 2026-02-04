@@ -3,6 +3,10 @@
     @apply pt-36 md:pt-40 lg:pt-48 pb-20 md:pb-28 lg:pb-32;
 }
 
+.c-legal-hero--low {
+    @apply pt-36 md:pt-40 lg:pt-48 pb-12 md:pb-16 lg:pb-20;
+}
+
 .c-legal-hero__title h1 {
     @apply text-xxxl font-dark-paradise font-medium text-black tracking-tight leading-[125%];
 }
