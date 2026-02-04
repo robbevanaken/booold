@@ -8,12 +8,18 @@
 </template>
 
 <script setup>
-import { nextTick } from 'vue'
+import { nextTick, watch } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { initLenis } from "../assets/js/animations/lenis.js"
+import { initLenis, resetLenisScroll } from "../assets/js/animations/lenis.js"
 
 gsap.registerPlugin(ScrollTrigger)
+
+const route = useRoute()
+
+watch(() => route.path, () => {
+  resetLenisScroll()
+})
 
 const onPageFinish = async () => {
   await nextTick()

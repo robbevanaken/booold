@@ -10,3 +10,11 @@ export async function initLenis() {
     gsap.ticker.add((time) => { lenis.raf(time * 1000); });
     gsap.ticker.lagSmoothing(0);
 }
+
+export function resetLenisScroll() {
+    if (lenis) {
+        lenis.stop();
+        lenis.scrollTo(0, { immediate: true });
+        lenis.start();
+    }
+}

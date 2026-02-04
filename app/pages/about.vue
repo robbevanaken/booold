@@ -69,7 +69,8 @@ useHead({
   title: 'About | Booold Studio'
 })
 
+usePageAnimations()
 const unicordContainer = ref(null)
 useUnicornStudio(unicordContainer)
-usePageAnimations()
+
 </script>
