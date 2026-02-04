@@ -24,7 +24,7 @@
 }
 
 .c-hero-home__logo-text h1 {
-    @apply text-white font-dark-paradise text-xxl leading-[100%];
+    @apply text-white font-dark-paradise text-baseline leading-[100%];
 }
 
 .c-hero-home__logo-text p {

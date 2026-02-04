@@ -30,6 +30,7 @@ module.exports = {
         "xl": ["clamp(28px, 3vw, 56px)", 1.25],
         "xxl": ["clamp(40px, 5vw, 64px)", 1.15],
         "xxxl": ["clamp(64px, 6vw, 94px)", 1.15],
+        "baseline": ["clamp(50px, 5vw, 84px)", 1.15],
       },
       letterSpacing: {
         "tight": '-0.04em',  // -4%
