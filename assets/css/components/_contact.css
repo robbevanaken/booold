@@ -83,7 +83,7 @@
 .c-contact__textarea {
     @apply w-full px-4 py-5;
     @apply bg-transparent;
-    @apply border border-black/50 rounded-none;
+    @apply border border-black/50 rounded-md;
     @apply text-base text-black placeholder:text-black/40 font-normal;
     @apply outline-none;
     @apply transition-all duration-300 ease-in-out;

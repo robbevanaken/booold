@@ -1,5 +1,5 @@
 .c-reel {
-    @apply aspect-[2/1] overflow-hidden;
+    @apply aspect-[2/1] overflow-hidden rounded-md;
 }
 
 .c-reel__swiper {

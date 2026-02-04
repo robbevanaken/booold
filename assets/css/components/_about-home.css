@@ -12,7 +12,7 @@
 }
 
 .c-about-home__content-canvas-wrapper {
-    @apply relative aspect-[2/1] md:aspect-[335/388] overflow-hidden;
+    @apply relative aspect-[2/1] md:aspect-[335/388] overflow-hidden rounded-md;
     @apply mx-[-1.25rem] md:mx-0;
 }
 
