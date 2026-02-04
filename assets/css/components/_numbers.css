@@ -1,5 +1,5 @@
 .c-numbers {
-    @apply py-28 md:py-32 lg:py-[12.5rem];
+    @apply py-28 md:py-32 lg:py-[16rem];
 }
 
 .c-numbers__title {
