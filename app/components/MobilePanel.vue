@@ -2,6 +2,9 @@
     <nav
         class="c-mobile-panel"
         :data-navigation-status="isOpen ? 'active' : 'not-active'"
+        :aria-hidden="!isOpen"
+        :inert="!isOpen"
+        aria-label="Mobile navigation"
     >
         <div class="c-mobile-panel__bg" @click="close"></div>
         <div class="c-mobile-panel__content">

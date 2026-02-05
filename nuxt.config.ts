@@ -24,6 +24,9 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
+      htmlAttrs: {
+        lang: 'en'
+      },
       meta: [
         { property: 'og:image', content: '/images/other/OGIMAGE.png' },
         { property: 'og:image:type', content: 'image/png' },

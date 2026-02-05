@@ -3,6 +3,8 @@
         <div aria-hidden="true" class="c-hamburger-ghost"></div>
         <button
             class="c-hamburger"
+            :aria-label="isOpen ? 'Close menu' : 'Open menu'"
+            :aria-expanded="isOpen"
             :data-navigation-status="isOpen ? 'active' : 'not-active'"
             @click="toggle"
         >

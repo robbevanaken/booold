@@ -4,8 +4,15 @@
       <div
         class="c-swipe-confirm__thumb"
         ref="thumbRef"
+        role="slider"
+        tabindex="0"
+        aria-label="Swipe to confirm you are human"
+        :aria-valuenow="Math.round((currentX / (trackRef?.offsetWidth - thumbRef?.offsetWidth || 1)) * 100)"
+        aria-valuemin="0"
+        aria-valuemax="100"
         @mousedown="startDrag"
         @touchstart="startDrag"
+        @keydown="handleKeydown"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
@@ -71,6 +78,32 @@ const endDrag = () => {
   if (!isConfirmed.value) {
     currentX.value = 0
     thumbRef.value.style.transform = 'translateX(0)'
+  }
+}
+
+const handleKeydown = (e) => {
+  if (isConfirmed.value) return
+
+  const trackWidth = trackRef.value.offsetWidth
+  const thumbWidth = thumbRef.value.offsetWidth
+  const maxX = trackWidth - thumbWidth
+  const step = maxX / 10
+
+  if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+    e.preventDefault()
+    currentX.value = Math.min(currentX.value + step, maxX)
+    thumbRef.value.style.transform = `translateX(${currentX.value}px)`
+
+    if (currentX.value >= maxX - 5) {
+      isConfirmed.value = true
+      currentX.value = maxX
+      thumbRef.value.style.transform = `translateX(${maxX}px)`
+      emit('confirmed')
+    }
+  } else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+    e.preventDefault()
+    currentX.value = Math.max(currentX.value - step, 0)
+    thumbRef.value.style.transform = `translateX(${currentX.value}px)`
   }
 }
 
