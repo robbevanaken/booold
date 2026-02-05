@@ -3,30 +3,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function setTheme(theme, bgTheme) {
-  document.querySelectorAll("[data-theme-nav]").forEach(function(elem) {
-    if (theme && elem.getAttribute("data-theme-nav") !== theme) {
-      elem.setAttribute("data-theme-nav", theme);
-    }
-  });
-
-  document.querySelectorAll("[data-bg-nav]").forEach(function(elem) {
-    const bg = bgTheme || "light";
-    if (elem.getAttribute("data-bg-nav") !== bg) {
-      elem.setAttribute("data-bg-nav", bg);
-    }
-  });
-}
-
-function resetThemeToFirstSection() {
-  const firstSection = document.querySelector("[data-theme-section]");
-  if (firstSection) {
-    const theme = firstSection.getAttribute("data-theme-section");
-    const bgTheme = firstSection.getAttribute("data-bg-section");
-    setTheme(theme, bgTheme);
-  }
-}
-
 function initCheckSectionThemeScroll() {
   const themeSections = document.querySelectorAll("[data-theme-section], [data-bg-section]");
 
@@ -42,6 +18,21 @@ function initCheckSectionThemeScroll() {
       onEnterBack: () => setTheme(theme, bgTheme),
     });
   });
+
+  function setTheme(theme, bgTheme) {
+    document.querySelectorAll("[data-theme-nav]").forEach(function(elem) {
+      if (theme && elem.getAttribute("data-theme-nav") !== theme) {
+        elem.setAttribute("data-theme-nav", theme);
+      }
+    });
+
+    document.querySelectorAll("[data-bg-nav]").forEach(function(elem) {
+      const bg = bgTheme || "light";
+      if (elem.getAttribute("data-bg-nav") !== bg) {
+        elem.setAttribute("data-bg-nav", bg);
+      }
+    });
+  }
 }
 
-export { initCheckSectionThemeScroll, resetThemeToFirstSection }
+export { initCheckSectionThemeScroll }

@@ -1,5 +1,5 @@
 <template>
-  <div ref="pageWrapper" class="page-wrapper">
+  <div>
     <SiteHeader />
     <main>
       <!-- Hero section -->
@@ -65,14 +65,12 @@ import { ref } from 'vue'
 import { useUnicornStudio } from '~/composables/useUnicornStudio'
 import { usePageAnimations } from '~/composables/usePageAnimations'
 
-const pageWrapper = ref(null)
-const unicordContainer = ref(null)
-
 useHead({
   title: 'About | Booold Studio'
 })
 
-usePageAnimations(pageWrapper)
+usePageAnimations()
+const unicordContainer = ref(null)
 useUnicornStudio(unicordContainer)
 
 </script>

@@ -46,6 +46,6 @@ body::selection {
     @apply transition-colors duration-500 ease-in-out;
 }
 
-body:has([data-bg-nav="dark"]) {
+[data-bg-nav="dark"] {
     @apply bg-black;
 }
