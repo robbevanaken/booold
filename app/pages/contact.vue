@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ref="pageWrapper" class="page-wrapper">
     <SiteHeader />
     <main>
 
@@ -140,11 +140,13 @@
 import { ref, reactive, nextTick } from 'vue'
 import { usePageAnimations } from '~/composables/usePageAnimations'
 
+const pageWrapper = ref(null)
+
 useHead({
   title: 'Contact | Booold Studio'
 })
 
-usePageAnimations()
+usePageAnimations(pageWrapper)
 
 const form = reactive({
   firstName: '',

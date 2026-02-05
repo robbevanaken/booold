@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ref="pageWrapper" class="page-wrapper">
     <SiteHeader :inverse="true" />
     <main>
       <HomeHero />
@@ -15,11 +15,14 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { usePageAnimations } from '~/composables/usePageAnimations'
+
+const pageWrapper = ref(null)
 
 useHead({
   title: 'Booold Studio | Design-driven websites'
 })
 
-usePageAnimations()
+usePageAnimations(pageWrapper)
 </script>

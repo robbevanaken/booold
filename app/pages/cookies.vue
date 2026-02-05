@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ref="pageWrapper" class="page-wrapper">
     <SiteHeader />
     <main>
       <!-- Hero section -->
@@ -38,11 +38,14 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { usePageAnimations } from '~/composables/usePageAnimations'
+
+const pageWrapper = ref(null)
 
 useHead({
   title: 'Cookies | Booold Studio'
 })
 
-usePageAnimations()
+usePageAnimations(pageWrapper)
 </script>
