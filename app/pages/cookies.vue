@@ -44,5 +44,9 @@ useHead({
   title: 'Cookies | Booold Studio'
 })
 
+useSeoMeta({
+  description: 'Booold Studio does not use cookies. No tracking, no third-party cookies, no personal data collected through cookies.'
+})
+
 usePageAnimations()
 </script>

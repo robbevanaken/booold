@@ -84,5 +84,9 @@ useHead({
   title: 'Privacy Policy | Booold Studio'
 })
 
+useSeoMeta({
+  description: 'Learn how Booold Studio handles your data. GDPR compliant, minimal data collection, and transparent about how contact form submissions are processed.'
+})
+
 usePageAnimations()
 </script>

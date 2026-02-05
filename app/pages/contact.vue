@@ -144,6 +144,10 @@ useHead({
   title: 'Contact | Booold Studio'
 })
 
+useSeoMeta({
+  description: 'Have a project in mind? Get in touch with Booold Studio. Fill in the form and receive a personal response, usually within a day.'
+})
+
 usePageAnimations()
 
 const form = reactive({
