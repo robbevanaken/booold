@@ -1,5 +1,9 @@
 <template>
-  <div class="c-swipe-confirm" :class="{ 'is-confirmed': isConfirmed }">
+  <div
+    class="c-swipe-confirm"
+    :class="{ 'is-confirmed': isConfirmed, 'is-dragging': isDragging }"
+    :style="{ '--thumb-x': `${currentX}px` }"
+  >
     <div class="c-swipe-confirm__track" ref="trackRef">
       <div
         class="c-swipe-confirm__thumb"
@@ -51,17 +55,15 @@ const onDrag = (e) => {
   const clientX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX
   const trackWidth = trackRef.value.offsetWidth
   const thumbWidth = thumbRef.value.offsetWidth
-  const maxX = trackWidth - thumbWidth
+  const maxX = trackWidth - thumbWidth - 8 // Account for padding
 
   currentX.value = Math.min(Math.max(0, clientX - startX.value + currentX.value), maxX)
-  thumbRef.value.style.transform = `translateX(${currentX.value}px)`
   startX.value = clientX
 
   // Check if reached the end
   if (currentX.value >= maxX - 5) {
     isConfirmed.value = true
     currentX.value = maxX
-    thumbRef.value.style.transform = `translateX(${maxX}px)`
     emit('confirmed')
     endDrag()
   }
@@ -77,7 +79,6 @@ const endDrag = () => {
   // Reset if not confirmed
   if (!isConfirmed.value) {
     currentX.value = 0
-    thumbRef.value.style.transform = 'translateX(0)'
   }
 }
 
@@ -86,33 +87,27 @@ const handleKeydown = (e) => {
 
   const trackWidth = trackRef.value.offsetWidth
   const thumbWidth = thumbRef.value.offsetWidth
-  const maxX = trackWidth - thumbWidth
+  const maxX = trackWidth - thumbWidth - 8
   const step = maxX / 10
 
   if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
     e.preventDefault()
     currentX.value = Math.min(currentX.value + step, maxX)
-    thumbRef.value.style.transform = `translateX(${currentX.value}px)`
 
     if (currentX.value >= maxX - 5) {
       isConfirmed.value = true
       currentX.value = maxX
-      thumbRef.value.style.transform = `translateX(${maxX}px)`
       emit('confirmed')
     }
   } else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
     e.preventDefault()
     currentX.value = Math.max(currentX.value - step, 0)
-    thumbRef.value.style.transform = `translateX(${currentX.value}px)`
   }
 }
 
 const reset = () => {
   isConfirmed.value = false
   currentX.value = 0
-  if (thumbRef.value) {
-    thumbRef.value.style.transform = 'translateX(0)'
-  }
 }
 
 defineExpose({ reset })

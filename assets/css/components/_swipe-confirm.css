@@ -1,4 +1,7 @@
 .c-swipe-confirm {
+  --thumb-x: 0px;
+  --thumb-size: 3rem;
+  --track-padding: 0.25rem;
   @apply w-full max-w-[18rem] select-none;
 }
 
@@ -10,22 +13,29 @@
 }
 
 .c-swipe-confirm__thumb {
-  @apply absolute left-1 top-1 bottom-1;
+  @apply absolute top-1 bottom-1;
+  left: var(--track-padding);
   @apply w-12 h-12 rounded-full;
   @apply bg-black text-white;
   @apply flex items-center justify-center;
   @apply cursor-grab active:cursor-grabbing;
-  @apply transition-opacity duration-300 ease-out;
   @apply z-10;
+  transform: translateX(var(--thumb-x));
+  will-change: transform;
+}
+
+/* Smooth spring animation when not dragging */
+.c-swipe-confirm:not(.is-dragging) .c-swipe-confirm__thumb {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-out;
 }
 
 .c-swipe-confirm__thumb:hover {
-  @apply opacity-60;
+  @apply opacity-80;
 }
 
 .c-swipe-confirm__thumb svg {
   @apply w-5 h-5;
-  @apply transition-opacity duration-300 ease-out;
+  @apply transition-opacity duration-300 ease-out;
 }
 
 .c-swipe-confirm__label {
@@ -33,26 +43,40 @@
   @apply flex items-center justify-center;
   @apply text-sm text-black/50 font-medium;
   @apply pointer-events-none;
-  @apply transition-opacity duration-300;
+  /* Mask: text disappears behind the thumb */
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    transparent calc(var(--thumb-x) + var(--thumb-size) + var(--track-padding)),
+    black calc(var(--thumb-x) + var(--thumb-size) + var(--track-padding) + 12px),
+    black 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    transparent calc(var(--thumb-x) + var(--thumb-size) + var(--track-padding)),
+    black calc(var(--thumb-x) + var(--thumb-size) + var(--track-padding) + 12px),
+    black 100%
+  );
 }
 
 .c-swipe-confirm.is-confirmed .c-swipe-confirm__track {
   @apply bg-green;
+  transition: background-color 0.4s ease;
 }
 
 .c-swipe-confirm.is-confirmed .c-swipe-confirm__thumb {
-  @apply opacity-0;
-  @apply bg-green;
+  @apply opacity-0 pointer-events-none;
+  transition: opacity 0.3s ease 0.1s;
 }
 
 .c-swipe-confirm.is-confirmed .c-swipe-confirm__thumb svg {
   @apply opacity-0;
 }
 
-.c-swipe-confirm.is-confirmed .c-swipe-confirm__thumb path {
-  @apply stroke-black;
-}
-
 .c-swipe-confirm.is-confirmed .c-swipe-confirm__label {
   @apply text-black;
+  mask-image: none;
+  -webkit-mask-image: none;
+  transition: color 0.3s ease;
 }
