@@ -48,6 +48,53 @@ export default defineNuxtConfig({
           type: 'font/woff2',
           crossorigin: ''
         },
+      ],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'WebSite',
+                '@id': 'https://boooldstudio.com/#website',
+                'url': 'https://boooldstudio.com',
+                'name': 'Booold Studio',
+                'description': 'Design-driven websites that combine clarity, performance, and character.',
+                'publisher': {
+                  '@id': 'https://boooldstudio.com/#organization'
+                }
+              },
+              {
+                '@type': 'Organization',
+                '@id': 'https://boooldstudio.com/#organization',
+                'name': 'Booold Studio',
+                'url': 'https://boooldstudio.com',
+                'logo': {
+                  '@type': 'ImageObject',
+                  'url': 'https://boooldstudio.com/images/other/OGIMAGE.png'
+                }
+              },
+              {
+                '@type': 'SiteNavigationElement',
+                '@id': 'https://boooldstudio.com/#navigation',
+                'name': 'Main Navigation',
+                'hasPart': [
+                  {
+                    '@type': 'WebPage',
+                    'name': 'About',
+                    'url': 'https://boooldstudio.com/about'
+                  },
+                  {
+                    '@type': 'WebPage',
+                    'name': 'Contact',
+                    'url': 'https://boooldstudio.com/contact'
+                  }
+                ]
+              }
+            ]
+          })
+        }
       ]
     }
 //     head: {
