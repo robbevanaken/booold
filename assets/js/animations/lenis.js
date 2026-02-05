@@ -2,19 +2,25 @@ import Lenis from "lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export let lenis = null;
+let lenisInstance = null;
+
+export { lenisInstance as lenis };
+
+export function getLenis() {
+    return lenisInstance;
+}
 
 export async function initLenis() {
-    lenis = new Lenis({});
-    lenis.on('scroll', ScrollTrigger.update);
-    gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+    lenisInstance = new Lenis({});
+    lenisInstance.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => { lenisInstance.raf(time * 1000); });
     gsap.ticker.lagSmoothing(0);
 }
 
 export function resetLenisScroll() {
-    if (lenis) {
-        lenis.stop();
-        lenis.scrollTo(0, { immediate: true });
-        lenis.start();
+    if (lenisInstance) {
+        lenisInstance.stop();
+        lenisInstance.scrollTo(0, { immediate: true, force: true });
+        lenisInstance.start();
     }
 }
