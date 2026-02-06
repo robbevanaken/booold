@@ -22,11 +22,11 @@
                 <h2 data-reveal>Page not found</h2>
                 <p data-reveal>The page you're looking for doesn't exist or has been moved.</p>
                 <div class="mt-8">
-                  <button class="c-btn" @click="handleError">
+                  <NuxtLink to="/" class="c-btn" @click.prevent="handleError">
                     <span class="c-btn__inner">
                       <span class="c-btn__text">Go home</span>
                     </span>
-                  </button>
+                  </NuxtLink>
                 </div>
               </section>
             </div>
