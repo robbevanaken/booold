@@ -10,8 +10,17 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/sitemap'
   ],
+
+  site: {
+    url: 'https://boooldstudio.com',
+  },
+
+  sitemap: {
+    strictNuxtContentPaths: true,
+  },
 
   ssr: true,
   

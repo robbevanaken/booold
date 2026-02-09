@@ -65,6 +65,8 @@ import { ref } from 'vue'
 import { useUnicornStudio } from '~/composables/useUnicornStudio'
 import { usePageAnimations } from '~/composables/usePageAnimations'
 
+useCanonical()
+
 useHead({
   title: 'About | Booold Studio'
 })

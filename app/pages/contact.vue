@@ -140,6 +140,8 @@
 import { ref, reactive, nextTick } from 'vue'
 import { usePageAnimations } from '~/composables/usePageAnimations'
 
+useCanonical()
+
 useHead({
   title: 'Contact | Booold Studio'
 })

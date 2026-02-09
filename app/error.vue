@@ -46,7 +46,10 @@ defineProps({
 })
 
 useHead({
-  title: 'Page not found | Booold Studio'
+  title: 'Page not found | Booold Studio',
+  meta: [
+    { name: 'robots', content: 'noindex, nofollow' }
+  ]
 })
 
 usePageAnimations()
