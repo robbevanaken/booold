@@ -30,7 +30,7 @@ function initContentRevealScroll() {
           self.lines.forEach(line => {
             const mask = line.parentElement
             if (mask) {
-              mask.style.padding = '0 0.1em 0 0.2em'
+              line.style.paddingLeft = '0.1em'
             }
           })
 
