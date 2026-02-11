@@ -27,13 +27,6 @@ function initContentRevealScroll() {
         onSplit: (self) => {
           if (prefersReduced) return
 
-          self.lines.forEach(line => {
-            const mask = line.parentElement
-            if (mask) {
-              line.style.paddingLeft = '0.1em'
-            }
-          })
-
           return gsap.from(self.lines, {
             yPercent: 100,
             duration: duration,

@@ -5,7 +5,3 @@
 .u-decorate * {
     @apply tracking-normal font-dark-paradise text-inherit;
 }
-
-.line {
-    @apply !pl-[0.2em] !pr-[0.1em];
-}
