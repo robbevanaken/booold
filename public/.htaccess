@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Force non-www
+RewriteCond %{HTTP_HOST} ^www\.boooldstudio\.com [NC]
+RewriteRule ^(.*)$ https://boooldstudio.com/$1 [L,R=301]
+
+</IfModule>
