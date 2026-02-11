@@ -28,10 +28,10 @@
         </button>
 
         <button
+          ref="noBtn"
           class="c-btn c-btn--no c-valentine__no"
-          :style="noStyle"
+          :style="noBtnStyle"
           @mouseenter="dodgeNo"
-          @click="dodgeNo"
           @touchstart.prevent="dodgeNo"
         >
           <span class="c-btn__inner">
@@ -52,7 +52,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, onMounted, onBeforeUnmount, nextTick } from 'vue'
+import { ref, reactive, computed, onBeforeUnmount, nextTick } from 'vue'
 
 useHead({
   title: 'A Secret Question...',
@@ -64,15 +64,31 @@ useSeoMeta({
 
 const accepted = ref(false)
 const confettiCanvas = ref(null)
-const noStyle = reactive({ position: 'relative', top: '0px', left: '0px', transition: 'all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.5)' })
+const noBtn = ref(null)
+const hasDodged = ref(false)
+const noPos = reactive({ x: 0, y: 0 })
+
+const noBtnStyle = computed(() => {
+  if (!hasDodged.value) return {}
+  return {
+    position: 'fixed',
+    top: `${noPos.y}px`,
+    left: `${noPos.x}px`,
+    zIndex: 50,
+    transition: 'top 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.5), left 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.5)',
+  }
+})
 
 function dodgeNo() {
-  const maxX = window.innerWidth * 0.3
-  const maxY = window.innerHeight * 0.25
-  const randomX = (Math.random() - 0.5) * 2 * maxX
-  const randomY = (Math.random() - 0.5) * 2 * maxY
-  noStyle.top = `${randomY}px`
-  noStyle.left = `${randomX}px`
+  const btnWidth = noBtn.value?.offsetWidth || 80
+  const btnHeight = noBtn.value?.offsetHeight || 50
+  const padding = 20
+  const maxX = window.innerWidth - btnWidth - padding
+  const maxY = window.innerHeight - btnHeight - padding
+
+  noPos.x = padding + Math.random() * (maxX - padding)
+  noPos.y = padding + Math.random() * (maxY - padding)
+  hasDodged.value = true
 }
 
 function sayYes() {
