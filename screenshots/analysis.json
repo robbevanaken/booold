@@ -1,0 +1,1344 @@
+[
+  {
+    "label": "homepage_desktop",
+    "url": "https://boooldstudio.com/",
+    "atf_screenshot": "/Users/robbevanaken/Desktop/Zaak/Projects/booold-new/screenshots/homepage_desktop_atf.png",
+    "full_screenshot": "/Users/robbevanaken/Desktop/Zaak/Projects/booold-new/screenshots/homepage_desktop_full.png",
+    "analysis": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "title": "Booold Studio | Design-driven websites",
+      "metaDescription": "Booold Studio creates design-driven websites that combine clarity, performance, and character. Custom web development with Craft CMS, Nuxt, and Vue.",
+      "metaOGImage": "/images/other/OGIMAGE.png",
+      "metaViewport": "width=device-width, initial-scale=1",
+      "canonical": "https://boooldstudio.com/",
+      "h1s": [
+        {
+          "text": "Booold Thinking\nBrilliant Outcomes",
+          "visible_above_fold": true,
+          "top": 403,
+          "bottom": 547,
+          "fontSize": "72px",
+          "fontFamily": "\"Dark Paradise\", serif"
+        }
+      ],
+      "h2s": [
+        "Under my belt I have:",
+        "Featured Projects",
+        "Convinced already? Or still\ncurious? Let\u2019s see what we can\nbuild together.",
+        "Booold thinking\nbrilliant outcomes"
+      ],
+      "h3s": [
+        "NGIS Wireless",
+        "De Wilde \u2013 Braems",
+        "Navigation",
+        "Socials",
+        "Contact me"
+      ],
+      "ctas": [
+        {
+          "tag": "A",
+          "text": "",
+          "href": "https://boooldstudio.com/",
+          "visible_above_fold": true,
+          "top": 52,
+          "width": 128,
+          "height": 19,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "href": "https://boooldstudio.com/about",
+          "visible_above_fold": true,
+          "top": 42,
+          "width": 59,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "href": "https://boooldstudio.com/#work",
+          "visible_above_fold": true,
+          "top": 42,
+          "width": 53,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Get in contact",
+          "href": "https://boooldstudio.com/contact",
+          "visible_above_fold": true,
+          "top": 24,
+          "width": 155,
+          "height": 56,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "href": "",
+          "visible_above_fold": false,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Get\nto\nknow\nme",
+          "href": "https://boooldstudio.com/about",
+          "visible_above_fold": false,
+          "top": 1623,
+          "width": 143,
+          "height": 28,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "NGIS Wireless\n\nA custom Wordpress template for a major 5G so",
+          "href": "https://ngis-wireless.com/",
+          "visible_above_fold": false,
+          "top": 4271,
+          "width": 648,
+          "height": 828,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "De Wilde \u2013 Braems\n\nA custom Wordpress template for a contrac",
+          "href": "https://dewilde-braems.be/",
+          "visible_above_fold": false,
+          "top": 4044,
+          "width": 567,
+          "height": 747,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Get in contact",
+          "href": "https://boooldstudio.com/contact",
+          "visible_above_fold": false,
+          "top": 5547,
+          "width": 155,
+          "height": 56,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Home",
+          "href": "https://boooldstudio.com/",
+          "visible_above_fold": false,
+          "top": 5891,
+          "width": 74,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "href": "https://boooldstudio.com/about",
+          "visible_above_fold": false,
+          "top": 5928,
+          "width": 74,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "href": "https://boooldstudio.com/#work",
+          "visible_above_fold": false,
+          "top": 5965,
+          "width": 65,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "href": "https://boooldstudio.com/contact",
+          "visible_above_fold": false,
+          "top": 6002,
+          "width": 94,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "Instagram",
+          "href": "https://www.instagram.com/boooldstudio/",
+          "visible_above_fold": false,
+          "top": 5891,
+          "width": 112,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/booold",
+          "visible_above_fold": false,
+          "top": 5928,
+          "width": 96,
+          "height": 26,
+          "fontSize": "22px"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://boooldstudio.com/images/reel/mockup-dwb.webp",
+          "alt": "Website for De Wilde - Braems",
+          "hasAlt": true,
+          "loading": "auto",
+          "naturalWidth": 5000,
+          "naturalHeight": 3750,
+          "displayWidth": 1128,
+          "displayHeight": 564,
+          "above_fold": false,
+          "overflows": false
+        },
+        {
+          "src": "https://boooldstudio.com/images/reel/mockup-ngis.webp",
+          "alt": "Website for NGIS Wireless",
+          "hasAlt": true,
+          "loading": "auto",
+          "naturalWidth": 5000,
+          "naturalHeight": 3750,
+          "displayWidth": 1128,
+          "displayHeight": 564,
+          "above_fold": false,
+          "overflows": false
+        },
+        {
+          "src": "https://boooldstudio.com/images/reel/mockup-booold.webp",
+          "alt": "Website for Booold Studio",
+          "hasAlt": true,
+          "loading": "auto",
+          "naturalWidth": 5000,
+          "naturalHeight": 3500,
+          "displayWidth": 1128,
+          "displayHeight": 564,
+          "above_fold": false,
+          "overflows": true
+        },
+        {
+          "src": "https://boooldstudio.com/images/reel/mockup-ngis.webp",
+          "alt": "Website for NGIS Wireless",
+          "hasAlt": true,
+          "loading": "auto",
+          "naturalWidth": 5000,
+          "naturalHeight": 3750,
+          "displayWidth": 648,
+          "displayHeight": 713,
+          "above_fold": false,
+          "overflows": false
+        },
+        {
+          "src": "https://boooldstudio.com/images/reel/mockup-dwb.webp",
+          "alt": "Website for De Wilde - Braems",
+          "hasAlt": true,
+          "loading": "auto",
+          "naturalWidth": 5000,
+          "naturalHeight": 3750,
+          "displayWidth": 567,
+          "displayHeight": 623,
+          "above_fold": false,
+          "overflows": false
+        }
+      ],
+      "bodyFontSize": 16,
+      "hasHorizontalOverflow": false,
+      "nav": [
+        {
+          "tag": "HEADER",
+          "class": "c-site-header c-site-header--inverse",
+          "visible": true,
+          "height": 104,
+          "display": "block"
+        },
+        {
+          "tag": "NAV",
+          "class": "c-navigation-primary c-navigation-primary--inverse",
+          "visible": true,
+          "height": 24,
+          "display": "block"
+        },
+        {
+          "tag": "NAV",
+          "class": "c-mobile-panel",
+          "visible": true,
+          "height": 900,
+          "display": "block"
+        }
+      ],
+      "clsRiskImageCount": 5,
+      "smallTouchTargets": [
+        {
+          "tag": "A",
+          "text": "",
+          "width": 128,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "width": 59,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "width": 53,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Get\nto\nknow\nme",
+          "width": 143,
+          "height": 28
+        },
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 74,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "width": 74,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "width": 65,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "width": 94,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Instagram",
+          "width": 112,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Linkedin",
+          "width": 96,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Whatsapp",
+          "width": 114,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Spotify",
+          "width": 84,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "hello@boooldstudio.com",
+          "width": 256,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "+32 494 48 77 62",
+          "width": 192,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Privacy Policy",
+          "width": 85,
+          "height": 17
+        }
+      ],
+      "totalImages": 5,
+      "totalLinks": 23,
+      "scrollWidth": 1440,
+      "clientWidth": 1440
+    }
+  },
+  {
+    "label": "homepage_mobile",
+    "url": "https://boooldstudio.com/",
+    "atf_screenshot": "/Users/robbevanaken/Desktop/Zaak/Projects/booold-new/screenshots/homepage_mobile_atf.png",
+    "full_screenshot": "/Users/robbevanaken/Desktop/Zaak/Projects/booold-new/screenshots/homepage_mobile_full.png",
+    "analysis": {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "title": "Booold Studio | Design-driven websites",
+      "metaDescription": "Booold Studio creates design-driven websites that combine clarity, performance, and character. Custom web development with Craft CMS, Nuxt, and Vue.",
+      "metaOGImage": "/images/other/OGIMAGE.png",
+      "metaViewport": "width=device-width, initial-scale=1",
+      "canonical": "https://boooldstudio.com/",
+      "h1s": [
+        {
+          "text": "Booold Thinking\nBrilliant Outcomes",
+          "visible_above_fold": true,
+          "top": 561,
+          "bottom": 661,
+          "fontSize": "50px",
+          "fontFamily": "\"Dark Paradise\", serif"
+        }
+      ],
+      "h2s": [
+        "Under my belt I have:",
+        "Featured Projects",
+        "Convinced already? Or\nstill curious? Let\u2019s see\nwhat we can build\ntogether.",
+        "Booold thinking\nbrilliant outcomes"
+      ],
+      "h3s": [
+        "NGIS Wireless",
+        "De Wilde \u2013 Braems",
+        "Navigation",
+        "Socials",
+        "Contact me"
+      ],
+      "ctas": [
+        {
+          "tag": "A",
+          "text": "",
+          "href": "https://boooldstudio.com/",
+          "visible_above_fold": true,
+          "top": 48,
+          "width": 128,
+          "height": 19,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "href": "https://boooldstudio.com/about",
+          "visible_above_fold": false,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "fontSize": "14px"
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "href": "https://boooldstudio.com/#work",
+          "visible_above_fold": false,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "fontSize": "14px"
+        },
+        {
+          "tag": "A",
+          "text": "Get in contact",
+          "href": "https://boooldstudio.com/contact",
+          "visible_above_fold": false,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "fontSize": "14px"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "href": "",
+          "visible_above_fold": true,
+          "top": 16,
+          "width": 64,
+          "height": 64,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Get\nto\nknow\nme",
+          "href": "https://boooldstudio.com/about",
+          "visible_above_fold": false,
+          "top": 1317,
+          "width": 129,
+          "height": 25,
+          "fontSize": "14px"
+        },
+        {
+          "tag": "A",
+          "text": "NGIS Wireless\n\nA custom Wordpress template for a major 5G so",
+          "href": "https://ngis-wireless.com/",
+          "visible_above_fold": false,
+          "top": 2633,
+          "width": 335,
+          "height": 524,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "De Wilde \u2013 Braems\n\nA custom Wordpress template for a contrac",
+          "href": "https://dewilde-braems.be/",
+          "visible_above_fold": false,
+          "top": 3173,
+          "width": 335,
+          "height": 524,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Get in contact",
+          "href": "https://boooldstudio.com/contact",
+          "visible_above_fold": false,
+          "top": 4029,
+          "width": 141,
+          "height": 53,
+          "fontSize": "14px"
+        },
+        {
+          "tag": "A",
+          "text": "Home",
+          "href": "https://boooldstudio.com/",
+          "visible_above_fold": false,
+          "top": 4368,
+          "width": 58,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "href": "https://boooldstudio.com/about",
+          "visible_above_fold": false,
+          "top": 4396,
+          "width": 58,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "href": "https://boooldstudio.com/#work",
+          "visible_above_fold": false,
+          "top": 4424,
+          "width": 51,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "href": "https://boooldstudio.com/contact",
+          "visible_above_fold": false,
+          "top": 4452,
+          "width": 71,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Instagram",
+          "href": "https://www.instagram.com/boooldstudio/",
+          "visible_above_fold": false,
+          "top": 4563,
+          "width": 84,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/booold",
+          "visible_above_fold": false,
+          "top": 4591,
+          "width": 73,
+          "height": 20,
+          "fontSize": "16px"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://boooldstudio.com/images/reel/mockup-dwb.webp",
+          "alt": "Website for De Wilde - Braems",
+          "hasAlt": true,
+          "loading": "auto",
+          "naturalWidth": 5000,
+          "naturalHeight": 3750,
+          "displayWidth": 335,
+          "displayHeight": 168,
+          "above_fold": false,
+          "overflows": false
+        },
+        {
+          "src": "https://boooldstudio.com/images/reel/mockup-ngis.webp",
+          "alt": "Website for NGIS Wireless",
+          "hasAlt": true,
+          "loading": "auto",
+          "naturalWidth": 5000,
+          "naturalHeight": 3750,
+          "displayWidth": 335,
+          "displayHeight": 168,
+          "above_fold": false,
+          "overflows": true
+        },
+        {
+          "src": "https://boooldstudio.com/images/reel/mockup-booold.webp",
+          "alt": "Website for Booold Studio",
+          "hasAlt": true,
+          "loading": "auto",
+          "naturalWidth": 5000,
+          "naturalHeight": 3500,
+          "displayWidth": 335,
+          "displayHeight": 168,
+          "above_fold": false,
+          "overflows": true
+        },
+        {
+          "src": "https://boooldstudio.com/images/reel/mockup-ngis.webp",
+          "alt": "Website for NGIS Wireless",
+          "hasAlt": true,
+          "loading": "auto",
+          "naturalWidth": 5000,
+          "naturalHeight": 3750,
+          "displayWidth": 335,
+          "displayHeight": 369,
+          "above_fold": false,
+          "overflows": false
+        },
+        {
+          "src": "https://boooldstudio.com/images/reel/mockup-dwb.webp",
+          "alt": "Website for De Wilde - Braems",
+          "hasAlt": true,
+          "loading": "auto",
+          "naturalWidth": 5000,
+          "naturalHeight": 3750,
+          "displayWidth": 335,
+          "displayHeight": 369,
+          "above_fold": false,
+          "overflows": false
+        }
+      ],
+      "bodyFontSize": 16,
+      "hasHorizontalOverflow": false,
+      "nav": [
+        {
+          "tag": "HEADER",
+          "class": "c-site-header c-site-header--inverse",
+          "visible": true,
+          "height": 96,
+          "display": "block"
+        },
+        {
+          "tag": "NAV",
+          "class": "c-navigation-primary c-navigation-primary--inverse",
+          "visible": false,
+          "height": 0,
+          "display": "block"
+        },
+        {
+          "tag": "NAV",
+          "class": "c-mobile-panel",
+          "visible": true,
+          "height": 812,
+          "display": "block"
+        }
+      ],
+      "clsRiskImageCount": 5,
+      "smallTouchTargets": [
+        {
+          "tag": "A",
+          "text": "",
+          "width": 128,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Get\nto\nknow\nme",
+          "width": 129,
+          "height": 25
+        },
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 58,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "width": 58,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "width": 51,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "width": 71,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Instagram",
+          "width": 84,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Linkedin",
+          "width": 73,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Whatsapp",
+          "width": 86,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Spotify",
+          "width": 64,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "hello@boooldstudio.com",
+          "width": 187,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "+32 494 48 77 62",
+          "width": 141,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Privacy Policy",
+          "width": 85,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Cookies",
+          "width": 50,
+          "height": 17
+        }
+      ],
+      "totalImages": 5,
+      "totalLinks": 23,
+      "scrollWidth": 375,
+      "clientWidth": 375
+    }
+  },
+  {
+    "label": "work_desktop",
+    "url": "https://boooldstudio.com/work",
+    "atf_screenshot": "/Users/robbevanaken/Desktop/Zaak/Projects/booold-new/screenshots/work_desktop_atf.png",
+    "full_screenshot": "/Users/robbevanaken/Desktop/Zaak/Projects/booold-new/screenshots/work_desktop_full.png",
+    "analysis": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "title": "Page not found | Booold Studio",
+      "metaDescription": null,
+      "metaOGImage": "/images/other/OGIMAGE.png",
+      "metaViewport": "width=device-width, initial-scale=1",
+      "canonical": null,
+      "h1s": [
+        {
+          "text": "404",
+          "visible_above_fold": true,
+          "top": 192,
+          "bottom": 300,
+          "fontSize": "86.4px",
+          "fontFamily": "\"Dark Paradise\", serif"
+        }
+      ],
+      "h2s": [
+        "Page not found",
+        "Booold thinking\nbrilliant outcomes"
+      ],
+      "h3s": [
+        "Navigation",
+        "Socials",
+        "Contact me"
+      ],
+      "ctas": [
+        {
+          "tag": "A",
+          "text": "",
+          "href": "https://boooldstudio.com/",
+          "visible_above_fold": true,
+          "top": 42,
+          "width": 128,
+          "height": 19,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "href": "https://boooldstudio.com/about",
+          "visible_above_fold": true,
+          "top": 42,
+          "width": 59,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "href": "https://boooldstudio.com/#work",
+          "visible_above_fold": true,
+          "top": 42,
+          "width": 53,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Get in contact",
+          "href": "https://boooldstudio.com/contact",
+          "visible_above_fold": true,
+          "top": 24,
+          "width": 155,
+          "height": 56,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "href": "",
+          "visible_above_fold": false,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Go home",
+          "href": "https://boooldstudio.com/",
+          "visible_above_fold": true,
+          "top": 491,
+          "width": 120,
+          "height": 56,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Home",
+          "href": "https://boooldstudio.com/",
+          "visible_above_fold": false,
+          "top": 886,
+          "width": 74,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "href": "https://boooldstudio.com/about",
+          "visible_above_fold": false,
+          "top": 923,
+          "width": 74,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "href": "https://boooldstudio.com/#work",
+          "visible_above_fold": false,
+          "top": 960,
+          "width": 65,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "href": "https://boooldstudio.com/contact",
+          "visible_above_fold": false,
+          "top": 997,
+          "width": 94,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "Instagram",
+          "href": "https://www.instagram.com/boooldstudio/",
+          "visible_above_fold": false,
+          "top": 886,
+          "width": 112,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/booold",
+          "visible_above_fold": false,
+          "top": 923,
+          "width": 96,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "Whatsapp",
+          "href": "tel:+32494487762",
+          "visible_above_fold": false,
+          "top": 960,
+          "width": 114,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "Spotify",
+          "href": "https://open.spotify.com/playlist/1EKZ2Fjg5p9sRzu2Su7CnQ?si=e3329365c9cb478c",
+          "visible_above_fold": false,
+          "top": 997,
+          "width": 84,
+          "height": 26,
+          "fontSize": "22px"
+        },
+        {
+          "tag": "A",
+          "text": "hello@boooldstudio.com",
+          "href": "mailto:hello@boooldstudio.com",
+          "visible_above_fold": false,
+          "top": 886,
+          "width": 256,
+          "height": 26,
+          "fontSize": "22px"
+        }
+      ],
+      "images": [],
+      "bodyFontSize": 16,
+      "hasHorizontalOverflow": false,
+      "nav": [
+        {
+          "tag": "HEADER",
+          "class": "c-site-header",
+          "visible": true,
+          "height": 104,
+          "display": "block"
+        },
+        {
+          "tag": "NAV",
+          "class": "c-navigation-primary",
+          "visible": true,
+          "height": 24,
+          "display": "block"
+        }
+      ],
+      "clsRiskImageCount": 0,
+      "smallTouchTargets": [
+        {
+          "tag": "A",
+          "text": "",
+          "width": 128,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "width": 59,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "width": 53,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 74,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "width": 74,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "width": 65,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "width": 94,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Instagram",
+          "width": 112,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Linkedin",
+          "width": 96,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Whatsapp",
+          "width": 114,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Spotify",
+          "width": 84,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "hello@boooldstudio.com",
+          "width": 256,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "+32 494 48 77 62",
+          "width": 192,
+          "height": 26
+        },
+        {
+          "tag": "A",
+          "text": "Privacy Policy",
+          "width": 85,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Cookies",
+          "width": 50,
+          "height": 17
+        }
+      ],
+      "totalImages": 0,
+      "totalLinks": 17,
+      "scrollWidth": 1440,
+      "clientWidth": 1440
+    }
+  },
+  {
+    "label": "work_mobile",
+    "url": "https://boooldstudio.com/work",
+    "atf_screenshot": "/Users/robbevanaken/Desktop/Zaak/Projects/booold-new/screenshots/work_mobile_atf.png",
+    "full_screenshot": "/Users/robbevanaken/Desktop/Zaak/Projects/booold-new/screenshots/work_mobile_full.png",
+    "analysis": {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "title": "Page not found | Booold Studio",
+      "metaDescription": null,
+      "metaOGImage": "/images/other/OGIMAGE.png",
+      "metaViewport": "width=device-width, initial-scale=1",
+      "canonical": null,
+      "h1s": [
+        {
+          "text": "404",
+          "visible_above_fold": true,
+          "top": 144,
+          "bottom": 224,
+          "fontSize": "64px",
+          "fontFamily": "\"Dark Paradise\", serif"
+        }
+      ],
+      "h2s": [
+        "Page not found",
+        "Booold thinking\nbrilliant outcomes"
+      ],
+      "h3s": [
+        "Navigation",
+        "Socials",
+        "Contact me"
+      ],
+      "ctas": [
+        {
+          "tag": "A",
+          "text": "",
+          "href": "https://boooldstudio.com/",
+          "visible_above_fold": true,
+          "top": 38,
+          "width": 128,
+          "height": 19,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "href": "https://boooldstudio.com/about",
+          "visible_above_fold": false,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "fontSize": "14px"
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "href": "https://boooldstudio.com/#work",
+          "visible_above_fold": false,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "fontSize": "14px"
+        },
+        {
+          "tag": "A",
+          "text": "Get in contact",
+          "href": "https://boooldstudio.com/contact",
+          "visible_above_fold": false,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "fontSize": "14px"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "href": "",
+          "visible_above_fold": true,
+          "top": 16,
+          "width": 64,
+          "height": 64,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Go home",
+          "href": "https://boooldstudio.com/",
+          "visible_above_fold": true,
+          "top": 410,
+          "width": 112,
+          "height": 53,
+          "fontSize": "14px"
+        },
+        {
+          "tag": "A",
+          "text": "Home",
+          "href": "https://boooldstudio.com/",
+          "visible_above_fold": true,
+          "top": 770,
+          "width": 58,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "href": "https://boooldstudio.com/about",
+          "visible_above_fold": false,
+          "top": 798,
+          "width": 58,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "href": "https://boooldstudio.com/#work",
+          "visible_above_fold": false,
+          "top": 826,
+          "width": 51,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "href": "https://boooldstudio.com/contact",
+          "visible_above_fold": false,
+          "top": 854,
+          "width": 71,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Instagram",
+          "href": "https://www.instagram.com/boooldstudio/",
+          "visible_above_fold": false,
+          "top": 966,
+          "width": 84,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/booold",
+          "visible_above_fold": false,
+          "top": 994,
+          "width": 73,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Whatsapp",
+          "href": "tel:+32494487762",
+          "visible_above_fold": false,
+          "top": 1022,
+          "width": 86,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "Spotify",
+          "href": "https://open.spotify.com/playlist/1EKZ2Fjg5p9sRzu2Su7CnQ?si=e3329365c9cb478c",
+          "visible_above_fold": false,
+          "top": 1050,
+          "width": 64,
+          "height": 20,
+          "fontSize": "16px"
+        },
+        {
+          "tag": "A",
+          "text": "hello@boooldstudio.com",
+          "href": "mailto:hello@boooldstudio.com",
+          "visible_above_fold": false,
+          "top": 1162,
+          "width": 187,
+          "height": 20,
+          "fontSize": "16px"
+        }
+      ],
+      "images": [],
+      "bodyFontSize": 16,
+      "hasHorizontalOverflow": false,
+      "nav": [
+        {
+          "tag": "HEADER",
+          "class": "c-site-header",
+          "visible": true,
+          "height": 96,
+          "display": "block"
+        },
+        {
+          "tag": "NAV",
+          "class": "c-navigation-primary",
+          "visible": false,
+          "height": 0,
+          "display": "block"
+        }
+      ],
+      "clsRiskImageCount": 0,
+      "smallTouchTargets": [
+        {
+          "tag": "A",
+          "text": "",
+          "width": 128,
+          "height": 19
+        },
+        {
+          "tag": "A",
+          "text": "Home",
+          "width": 58,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "About",
+          "width": 58,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Work",
+          "width": 51,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "width": 71,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Instagram",
+          "width": 84,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Linkedin",
+          "width": 73,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Whatsapp",
+          "width": 86,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Spotify",
+          "width": 64,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "hello@boooldstudio.com",
+          "width": 187,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "+32 494 48 77 62",
+          "width": 141,
+          "height": 20
+        },
+        {
+          "tag": "A",
+          "text": "Privacy Policy",
+          "width": 85,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "Cookies",
+          "width": 50,
+          "height": 17
+        }
+      ],
+      "totalImages": 0,
+      "totalLinks": 17,
+      "scrollWidth": 375,
+      "clientWidth": 375
+    }
+  }
+]

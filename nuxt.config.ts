@@ -20,6 +20,11 @@ export default defineNuxtConfig({
 
   sitemap: {
     strictNuxtContentPaths: true,
+    exclude: ['/energie'],
+  },
+
+  routeRules: {
+    '/energie': { robots: false },
   },
 
   ssr: true,
