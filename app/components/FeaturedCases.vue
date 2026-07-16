@@ -31,12 +31,12 @@
 <script setup>
 const cases = [
     {
-        title: 'NGIS Wireless',
-        description: 'A custom Wordpress template for a major 5G solutions provider.',
-        src: '/images/reel/mockup-ngis.webp',
-        alt: 'Website for NGIS Wireless',
-        link: 'https://ngis-wireless.com',
-        tags: ["Wordpress", "PHP", "Javascript"]
+        title: 'Woonpact Gent',
+        description: 'A unique design and structured CMS for the city of Ghent.',
+        src: '/images/reel/mockup-woonpact.webp',
+        alt: 'Website for Woonpact Gent',
+        link: 'https://woonpact.gent',
+        tags: ["Craft CMS", "PHP", "Javascript"]
     },
     {
         title: 'De Wilde – Braems',
