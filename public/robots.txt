@@ -1,4 +1,5 @@
 User-Agent: *
 Disallow: /api/
+Disallow: /designs/
 
 Sitemap: https://boooldstudio.com/sitemap.xml

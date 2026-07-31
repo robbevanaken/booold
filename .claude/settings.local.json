@@ -7,7 +7,8 @@
       "Bash(node --version:*)",
       "Bash(npx tsc:*)",
       "Bash(git -C /Users/robbevanaken/Desktop/Zaak/Projects/booold-new remote -v)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Read(//Users/robbevanaken/Downloads/**)"
     ]
   }
 }
